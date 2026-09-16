@@ -1,0 +1,1023 @@
+/* =========================================================
+   GALLERY PAGE
+   Dr. Muthineni Rajini
+========================================================= */
+
+
+/* =========================================================
+   PAGE BANNER
+========================================================= */
+
+.gallery-page-banner {
+    position: relative;
+
+    margin-top: 92px;
+
+    padding: 42px 20px 45px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            110deg,
+            #575a32 0%,
+            #6b6f3d 55%,
+            #8a7b3f 100%
+        );
+
+    color: #ffffff;
+}
+
+
+
+
+.gallery-banner-content {
+    position: relative;
+
+    z-index: 2;
+
+    width: 100%;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.gallery-page-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin: 0 0 12px;
+
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.gallery-page-breadcrumb a {
+    color: #ffffff;
+
+    text-decoration: none;
+
+    transition: color 0.25s ease;
+}
+
+
+.gallery-page-breadcrumb a:hover {
+    color: #f3d77e;
+}
+
+
+.gallery-page-breadcrumb i {
+    color: rgba(255, 255, 255, 0.65);
+
+    font-size: 8px;
+}
+
+
+.gallery-page-breadcrumb span {
+    color: #f3d77e;
+}
+
+
+/* =========================================================
+   BANNER TITLE
+========================================================= */
+
+.gallery-page-banner h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(40px, 5vw, 58px);
+
+    line-height: 1.1;
+}
+
+
+.gallery-page-banner p {
+    max-width: 720px;
+
+    margin: 13px auto 0;
+
+    color: rgba(255, 255, 255, 0.92);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   GALLERY PAGE SECTION
+========================================================= */
+
+.gallery-page-section {
+    width: 100%;
+
+    padding: 65px 20px 85px;
+
+    background: #ffffff;
+
+    box-sizing: border-box;
+}
+
+
+.gallery-page-section > .container {
+    width: 100%;
+
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PAGE HEADING
+========================================================= */
+
+.gallery-page-heading {
+    width: 100%;
+
+    max-width: 800px;
+
+    margin: 0 auto 34px;
+
+    text-align: center;
+}
+
+
+.gallery-page-heading > span {
+    display: block;
+
+    margin: 0;
+
+    color: #747b3f;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+
+    text-transform: uppercase;
+}
+
+
+.gallery-page-heading h2 {
+    margin: 10px 0 12px;
+
+    color: #173c2b;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: clamp(36px, 4vw, 48px);
+
+    line-height: 1.15;
+}
+
+
+.gallery-page-heading h2 em {
+    color: #8a7b3f;
+
+    font-weight: inherit;
+}
+
+
+.gallery-page-heading p {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #667269;
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   COMMON GALLERY WRAPPER
+========================================================= */
+
+.gallery-common-wrapper {
+    display: block;
+
+    width: 100%;
+
+    max-width: 1240px;
+
+    margin: 0 auto;
+
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   GALLERY TABS
+========================================================= */
+
+.gallery-common-wrapper .gallery-tabs {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: fit-content;
+
+    max-width: 100%;
+
+    margin: 0 auto 38px;
+
+    padding: 5px;
+
+    border: 1px solid #dedfce;
+
+    border-radius: 999px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 4px 14px rgba(23, 60, 43, 0.04);
+}
+
+
+.gallery-common-wrapper .gallery-tab {
+    min-width: 132px;
+
+    margin: 0;
+
+    padding: 11px 20px;
+
+    border: 0;
+
+    border-radius: 999px;
+
+    background: transparent;
+
+    color: #50594f;
+
+    font: inherit;
+
+    font-size: 13px;
+    font-weight: 700;
+
+    line-height: 1.2;
+
+    cursor: pointer;
+
+    transition:
+        background-color 0.25s ease,
+        color 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.gallery-common-wrapper .gallery-tab:hover {
+    color: #173c2b;
+}
+
+
+.gallery-common-wrapper .gallery-tab.active {
+    background:
+        linear-gradient(
+            135deg,
+            #667038,
+            #858447
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 4px 12px rgba(74, 82, 42, 0.16);
+}
+
+
+/* =========================================================
+   TAB CONTENT
+   IMPORTANT FOR PHOTO <-> VIDEO SWITCH
+========================================================= */
+
+.gallery-common-wrapper .gallery-content {
+    display: none !important;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    min-height: 0 !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: none !important;
+
+    box-sizing: border-box;
+}
+
+
+.gallery-common-wrapper .gallery-content.active {
+    display: block !important;
+}
+
+
+/* =========================================================
+   PHOTO + VIDEO GRID
+
+   DESKTOP:
+   4 COLUMNS
+   24PX HORIZONTAL GAP
+   26PX VERTICAL GAP
+========================================================= */
+
+.gallery-common-wrapper .gallery-grid,
+.gallery-common-wrapper .video-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    column-gap: 24px !important;
+
+    row-gap: 26px !important;
+
+    gap: 26px 24px !important;
+
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    align-items: stretch;
+
+    justify-content: stretch;
+
+    columns: unset !important;
+
+    column-count: unset !important;
+
+    box-sizing: border-box;
+}
+
+
+/* =========================================================
+   PHOTO CARD
+========================================================= */
+
+.gallery-common-wrapper .gallery-item {
+    position: relative;
+
+    display: block !important;
+
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    max-width: none !important;
+
+    height: auto !important;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    aspect-ratio: 4 / 3;
+
+    overflow: hidden;
+
+    border: 1px solid #e1e4d8;
+
+    border-radius: 15px;
+
+    background: #f5f6f0;
+
+    box-shadow:
+        0 7px 22px rgba(23, 60, 43, 0.07);
+
+    transform: none;
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    break-inside: auto !important;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.gallery-common-wrapper .gallery-item:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(116, 123, 63, 0.45);
+
+    box-shadow:
+        0 14px 30px rgba(23, 60, 43, 0.11);
+}
+
+
+.gallery-common-wrapper .gallery-item img {
+    display: block;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    max-width: 100%;
+
+    margin: 0;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    transition: transform 0.4s ease;
+}
+
+
+.gallery-common-wrapper .gallery-item:hover img {
+    transform: scale(1.035);
+}
+
+
+/* =========================================================
+   VIDEO CARD
+========================================================= */
+
+.gallery-common-wrapper .video-card {
+    position: relative;
+
+    display: flex !important;
+
+    flex-direction: column;
+
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    max-width: none !important;
+
+    height: 100%;
+
+    margin: 0 !important;
+
+    padding: 0 !important;
+
+    overflow: hidden;
+
+    border: 1px solid #e1e4d8;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 7px 22px rgba(23, 60, 43, 0.07);
+
+    opacity: 1 !important;
+
+    visibility: visible !important;
+
+    transform: none;
+
+    box-sizing: border-box;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+
+.gallery-common-wrapper .video-card:hover {
+    transform: translateY(-4px);
+
+    border-color: rgba(116, 123, 63, 0.45);
+
+    box-shadow:
+        0 14px 30px rgba(23, 60, 43, 0.11);
+}
+
+
+/* =========================================================
+   VIDEO FRAME
+========================================================= */
+
+.gallery-common-wrapper .video-embed {
+    position: relative;
+
+    display: block;
+
+    flex: 0 0 auto;
+
+    width: 100% !important;
+
+    height: auto !important;
+
+    aspect-ratio: 16 / 9;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    background: #111111;
+}
+
+
+.gallery-common-wrapper .video-embed iframe {
+    position: absolute;
+
+    inset: 0;
+
+    display: block;
+
+    width: 100% !important;
+
+    height: 100% !important;
+
+    margin: 0;
+
+    padding: 0;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   VIDEO INFORMATION
+========================================================= */
+
+.gallery-common-wrapper .video-content {
+    display: flex;
+
+    flex: 1;
+
+    flex-direction: column;
+
+    padding: 16px 17px 18px;
+
+    background: #ffffff;
+}
+
+
+.gallery-common-wrapper .video-content span {
+    display: block;
+
+    margin: 0 0 7px;
+
+    color: #8a7b3f;
+
+    font-size: 10px;
+    font-weight: 800;
+
+    line-height: 1.4;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+}
+
+
+.gallery-common-wrapper .video-content h3 {
+    display: -webkit-box;
+
+    margin: 0;
+
+    overflow: hidden;
+
+    color: #173c2b;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    line-height: 1.5;
+
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+}
+
+
+/* =========================================================
+   HOME PAGE GALLERY
+
+   SAME MODERATE WIDTH
+========================================================= */
+
+.home-gallery-wrapper {
+    width: 100% !important;
+
+    max-width: 1180px !important;
+
+    margin-right: auto !important;
+
+    margin-left: auto !important;
+
+    padding-right: 0 !important;
+
+    padding-left: 0 !important;
+}
+
+
+.home-gallery-wrapper .gallery-grid,
+.home-gallery-wrapper .video-grid {
+    width: 100% !important;
+
+    max-width: 1180px !important;
+
+    margin-right: auto !important;
+
+    margin-left: auto !important;
+
+    column-gap: 24px !important;
+
+    row-gap: 26px !important;
+
+    gap: 26px 24px !important;
+}
+
+
+/* =========================================================
+   VIEW FULL GALLERY
+   HOME PAGE ONLY
+========================================================= */
+
+.gallery-view-more {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+
+    margin: 36px 0 0;
+
+    padding: 0;
+}
+
+
+.gallery-view-more .btn {
+    margin: 0;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+     .gallery-page-banner {
+        margin-top: 76px;
+    }
+
+    .gallery-page-section {
+        padding-right: 18px;
+        padding-left: 18px;
+    }
+
+    .gallery-common-wrapper .gallery-grid,
+    .gallery-common-wrapper .video-grid,
+    .home-gallery-wrapper .gallery-grid,
+    .home-gallery-wrapper .video-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        column-gap: 20px !important;
+        row-gap: 22px !important;
+        gap: 22px 20px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .gallery-page-banner {
+        margin-top: 76px;
+
+        padding: 30px 15px 32px;
+    }
+
+
+    .gallery-page-breadcrumb {
+        gap: 7px;
+
+        margin-bottom: 10px;
+
+        font-size: 12px;
+    }
+
+
+    .gallery-page-banner h1 {
+        font-size: 36px;
+    }
+
+
+    .gallery-page-banner p {
+        max-width: 520px;
+
+        margin-top: 10px;
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+
+    .gallery-page-section {
+        padding: 48px 15px 60px;
+    }
+
+
+    .gallery-page-heading {
+        margin-bottom: 27px;
+    }
+
+
+    .gallery-page-heading > span {
+        font-size: 11px;
+    }
+
+
+    .gallery-page-heading h2 {
+        margin-top: 8px;
+
+        font-size: 32px;
+    }
+
+
+    .gallery-page-heading p {
+        font-size: 14px;
+
+        line-height: 1.65;
+    }
+
+
+    .gallery-common-wrapper .gallery-tabs {
+        margin-bottom: 28px;
+    }
+
+
+    .gallery-common-wrapper .gallery-tab {
+        min-width: 118px;
+
+        padding: 10px 14px;
+
+        font-size: 12px;
+    }
+
+
+    .gallery-common-wrapper .gallery-grid,
+    .gallery-common-wrapper .video-grid,
+    .home-gallery-wrapper .gallery-grid,
+    .home-gallery-wrapper .video-grid {
+
+        column-gap: 16px !important;
+
+        row-gap: 18px !important;
+
+        gap: 18px 16px !important;
+    }
+
+
+    .gallery-view-more {
+        margin-top: 28px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .gallery-common-wrapper .gallery-grid,
+    .gallery-common-wrapper .video-grid,
+    .home-gallery-wrapper .gallery-grid,
+    .home-gallery-wrapper .video-grid {
+
+        grid-template-columns:
+            1fr !important;
+
+        row-gap: 18px !important;
+
+        column-gap: 0 !important;
+
+        gap: 18px 0 !important;
+    }
+
+
+    .gallery-common-wrapper .gallery-tabs {
+        width: 100%;
+
+        max-width: 310px;
+
+        padding: 4px;
+    }
+
+
+    .gallery-common-wrapper .gallery-tab {
+        flex: 1;
+
+        min-width: 0;
+
+        padding: 10px 9px;
+    }
+
+
+    .gallery-common-wrapper .gallery-item {
+        border-radius: 13px;
+    }
+
+
+    .gallery-common-wrapper .video-card {
+        border-radius: 13px;
+    }
+
+
+    .gallery-common-wrapper .video-content {
+        padding: 14px 15px 16px;
+    }
+
+
+    .gallery-common-wrapper .video-content h3 {
+        font-size: 13px;
+    }
+
+}
+
+/* =========================================================
+   FINAL COLUMN SETTINGS
+
+   PHOTO GALLERY
+   Desktop = 4 per row
+
+   YOUTUBE VIDEOS
+   Desktop = 3 per row
+========================================================= */
+
+
+/* PHOTO GALLERY - 4 PER ROW */
+
+.gallery-common-wrapper .gallery-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(4, minmax(0, 1fr)) !important;
+
+    gap: 26px 24px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+}
+
+
+/* YOUTUBE VIDEOS - 3 PER ROW */
+
+.gallery-common-wrapper .video-grid {
+    display: grid !important;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr)) !important;
+
+    gap: 26px 24px !important;
+
+    width: 100% !important;
+
+    margin: 0 !important;
+}
+
+
+/* VIDEO CARD */
+
+.gallery-common-wrapper .video-card {
+    width: 100% !important;
+
+    min-width: 0 !important;
+
+    margin: 0 !important;
+
+    overflow: hidden;
+
+    border: 1px solid #e1e4d8;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 7px 22px rgba(23, 60, 43, 0.07);
+}
+
+
+/* VIDEO SIZE */
+
+.gallery-common-wrapper .video-embed {
+    position: relative;
+
+    width: 100% !important;
+
+    aspect-ratio: 16 / 9;
+
+    overflow: hidden;
+
+    background: #111111;
+}
+
+
+.gallery-common-wrapper .video-embed iframe {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100% !important;
+    height: 100% !important;
+
+    border: 0;
+}
+
+
+/* =========================================================
+   TABLET
+   Photos = 2
+   Videos = 2
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .gallery-common-wrapper .gallery-grid,
+    .gallery-common-wrapper .video-grid {
+
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr)) !important;
+
+        gap: 22px 20px !important;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+   Photos = 1
+   Videos = 1
+========================================================= */
+
+@media (max-width: 575px) {
+
+    .gallery-common-wrapper .gallery-grid,
+    .gallery-common-wrapper .video-grid {
+
+        grid-template-columns:
+            1fr !important;
+
+        gap: 18px !important;
+    }
+
+}

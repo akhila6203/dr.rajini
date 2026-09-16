@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>
+        Book Appointment | Dr. Muthineni Rajini
+    </title>
+        <link
+        rel="icon"
+        type="image/jpeg"
+        href="assets/images/logo-url.jpg"
+    >
+
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+    <link
+    rel="stylesheet"
+    href="css/appointment.css"
+>
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+    <!-- SAME HEADER -->
+    <div id="header-placeholder"></div>
+
+
+    <!-- =========================================
+         APPOINTMENT BANNER
+    ========================================== -->
+
+    <section class="inner-page-banner">
+
+    <div class="container inner-page-banner-content">
+
+        <div class="inner-breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <span class="breadcrumb-arrow">
+                <i class="fa-solid fa-chevron-right"></i>
+            </span>
+
+            <span class="breadcrumb-current">
+                Book Appointment
+            </span>
+
+        </div>
+
+
+        <h1>
+            Book Appointment
+        </h1>
+
+
+        <p>
+            Schedule your consultation with Dr. Muthineni Rajini
+            for personalised women's healthcare.
+        </p>
+
+    </div>
+
+</section>
+
+
+    <!-- =========================================
+         APPOINTMENT CONTENT
+    ========================================== -->
+
+    <main class="appointment-page">
+
+        <div class="container appointment-page-grid">
+
+
+            <!-- ================================
+                 LEFT DOCTOR IMAGE
+            ================================= -->
+
+            <div class="appointment-doctor-side">
+
+                <div class="appointment-image-box">
+
+                    <img
+                        src="assets/images/owner.jpg"
+                        alt="Dr. Muthineni Rajini"
+                    >
+
+                </div>
+
+
+                <div class="appointment-doctor-content">
+
+                    <span class="appointment-doctor-label">
+                        CONSULTATION
+                    </span>
+
+                    <h2>
+                        Dr. Muthineni Rajini
+                    </h2>
+
+                    <p>
+                        Consult for comprehensive women's healthcare,
+                        obstetrics, gynecology and advanced
+                        gynecological treatments.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <!-- ================================
+                 RIGHT FORM
+            ================================= -->
+
+            <div class="separate-form-card appointment-form-card">
+
+                <div class="page-small-title">
+
+                    <i class="fa-regular fa-calendar-check"></i>
+
+                    <span>
+                        Appointment
+                    </span>
+
+                </div>
+
+
+                <h2>
+                    Book Your
+                    <span>Appointment</span>
+                </h2>
+
+
+                <p class="appointment-form-intro">
+                    Fill in your details and our team will
+                    contact you to confirm your appointment.
+                </p>
+
+
+                <form
+                    action="send-mail.php"
+                    method="POST"
+                    class="appointment-booking-form"
+                >
+
+                    <input
+                        type="hidden"
+                        name="form_type"
+                        value="appointment"
+                    >
+
+
+                    <!-- ROW -->
+                    <div class="appointment-form-row">
+
+
+                        <div class="separate-form-group">
+
+                            <label for="appointment-name">
+                                Full Name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="appointment-name"
+                                name="full_name"
+                                placeholder="Full Name*"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="separate-form-group">
+
+                            <label for="appointment-email">
+                                Email Address
+                            </label>
+
+                            <input
+                                type="email"
+                                id="appointment-email"
+                                name="email"
+                                placeholder="Email Address*"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- ROW -->
+                    <div class="appointment-form-row">
+
+
+                        <div class="separate-form-group">
+
+                            <label for="appointment-phone">
+                                Phone Number
+                            </label>
+
+                            <input
+                                type="tel"
+                                id="appointment-phone"
+                                name="phone"
+                                placeholder="Phone Number*"
+                                required
+                            >
+
+                        </div>
+
+
+                        <div class="separate-form-group">
+
+                            <label for="appointment-date">
+                                Preferred Date
+                            </label>
+
+                            <input
+                                type="date"
+                                id="appointment-date"
+                                name="preferred_date"
+                                required
+                            >
+
+                        </div>
+
+                    </div>
+
+
+                    <!-- SERVICE -->
+
+                    <div class="separate-form-group">
+
+                        <label for="appointment-service">
+                            Type Of Service
+                        </label>
+
+                        <select
+                            id="appointment-service"
+                            name="service"
+                            required
+                        >
+
+                            <option value="">
+                                Type Of Service
+                            </option>
+
+                            <option value="Obstetrics & Gynecology">
+                                Obstetrics &amp; Gynecology
+                            </option>
+
+                            <option value="High-Risk Obstetrics">
+                                High-Risk Obstetrics
+                            </option>
+
+                            <option value="General Gynecology">
+                                General Gynecology
+                            </option>
+
+                            <option value="Surgical Gynecology">
+                                Surgical Gynecology
+                            </option>
+
+                            <option value="Robotic-Assisted Surgery">
+                                Robotic-Assisted Surgery
+                            </option>
+
+                            <option value="Laparoscopic Surgery">
+                                Laparoscopic Surgery
+                            </option>
+
+                            <option value="Hysteroscopy Procedures">
+                                Hysteroscopy Procedures
+                            </option>
+
+                            <option value="Emergency Surgeries">
+                                Emergency Surgeries
+                            </option>
+
+                            <option value="Infertility Services">
+                                Infertility Services
+                            </option>
+
+                            <option value="Menopausal Clinic">
+                                Menopausal Clinic
+                            </option>
+
+                            <option value="Counselling Services">
+                                Counselling Services
+                            </option>
+
+                            <option value="Cosmetic Gynecology">
+                                Cosmetic Gynecology
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <!-- MESSAGE -->
+
+                    <div class="separate-form-group">
+
+                        <label for="appointment-message">
+                            Message
+                        </label>
+
+                        <textarea
+                            id="appointment-message"
+                            name="message"
+                            rows="5"
+                            placeholder="Type Here..."
+                        ></textarea>
+
+                    </div>
+
+
+                    <button
+                        type="submit"
+                        class="separate-submit-btn"
+                    >
+
+                        Book Appointment
+
+                        <i class="fa-solid fa-arrow-right"></i>
+
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- SAME FOOTER -->
+    <div id="footer-placeholder"></div>
+
+
+    <script src="js/components.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,681 @@
+/* =========================================================
+   APPOINTMENT PAGE - FINAL CSS
+========================================================= */
+
+body {
+    overflow-x: hidden;
+}
+
+
+/* =========================================================
+   PAGE BANNER
+========================================================= */
+
+.inner-page-banner {
+    position: relative;
+    overflow: hidden;
+
+    margin-top: 92px;
+    padding: 42px 20px 44px;
+
+    background: linear-gradient(
+        110deg,
+        #575a32 0%,
+        #6b6f3d 55%,
+        #8a7b3f 100%
+    );
+
+    color: #ffffff;
+}
+
+
+.inner-page-banner-content {
+    position: relative;
+    z-index: 2;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.inner-breadcrumb {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    margin: 0 0 13px;
+
+    color: #ffffff;
+
+    font-size: 14px;
+    line-height: 1.5;
+    font-weight: 600;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+.inner-breadcrumb a {
+    display: inline-flex !important;
+    align-items: center;
+
+    color: #ffffff !important;
+
+    text-decoration: none;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+
+    transition: color 0.2s ease;
+}
+
+.inner-breadcrumb a:hover {
+    color: #f3d77e !important;
+}
+
+.breadcrumb-arrow {
+    display: inline-flex !important;
+    align-items: center;
+    justify-content: center;
+
+    color: rgba(255, 255, 255, 0.72) !important;
+}
+
+.breadcrumb-arrow i {
+    font-size: 9px;
+}
+
+.breadcrumb-current {
+    display: inline-block !important;
+
+    color: #f3d77e !important;
+
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
+
+/* =========================================================
+   BANNER CONTENT
+========================================================= */
+
+.inner-page-banner h1 {
+    margin: 0 0 10px;
+
+    color: #ffffff;
+
+    font-size: clamp(38px, 4vw, 54px);
+    line-height: 1.1;
+    font-weight: 800;
+}
+
+.inner-page-banner p {
+    max-width: 780px;
+
+    margin: 0 auto;
+
+    color: rgba(255, 255, 255, 0.9);
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   APPOINTMENT MAIN SECTION
+========================================================= */
+
+.appointment-page {
+    padding: 65px 20px;
+
+    background: #f7f8f3;
+}
+
+.appointment-page-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.82fr)
+        minmax(0, 1.18fr);
+
+    gap: 50px;
+
+    align-items: stretch;
+}
+
+
+/* =========================================================
+   LEFT DOCTOR CARD
+========================================================= */
+
+.appointment-doctor-side {
+    position: relative;
+    overflow: hidden;
+
+    min-height: 640px;
+
+    border: 1px solid rgba(107, 111, 61, 0.1);
+    border-radius: 22px;
+
+    background: #ffffff;
+
+    box-shadow: 0 16px 45px rgba(30, 41, 59, 0.08);
+}
+
+
+/* =========================================================
+   DOCTOR IMAGE
+========================================================= */
+
+.appointment-image-box {
+    width: 100%;
+    height: 475px;
+
+    overflow: hidden;
+}
+
+.appointment-image-box img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: center top;
+}
+
+
+/* =========================================================
+   DOCTOR CONTENT
+========================================================= */
+
+.appointment-doctor-content {
+    padding: 26px 28px 30px;
+}
+
+.appointment-doctor-label {
+    display: inline-block;
+
+    color: #6b6f3d;
+
+    font-size: 12px;
+    line-height: 1.4;
+    letter-spacing: 1.2px;
+    font-weight: 800;
+}
+
+.appointment-doctor-content h2 {
+    margin: 9px 0 11px;
+
+    color: #1e293b;
+
+    font-size: 30px;
+    line-height: 1.25;
+    font-weight: 800;
+}
+
+.appointment-doctor-content p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 16px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   APPOINTMENT FORM CARD
+========================================================= */
+
+.separate-form-card,
+.appointment-form-card {
+    width: 100%;
+    height: auto;
+
+    box-sizing: border-box;
+
+    padding: 32px 36px;
+
+    border: 1px solid rgba(107, 111, 61, 0.1);
+    border-radius: 20px;
+
+    background: #ffffff;
+
+    box-shadow: 0 16px 45px rgba(30, 41, 59, 0.08);
+}
+
+
+/* =========================================================
+   SMALL TITLE
+========================================================= */
+
+.page-small-title {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+
+    margin-bottom: 8px;
+
+    color: #6b6f3d;
+
+    font-size: 15px;
+    line-height: 1.5;
+    font-weight: 800;
+}
+
+.page-small-title i {
+    color: #6b6f3d;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   FORM HEADING
+========================================================= */
+
+.appointment-form-card > h2 {
+    margin: 0 0 20px;
+
+    color: #1e293b;
+
+    font-size: clamp(40px, 3.2vw, 50px);
+    line-height: 1.12;
+    font-weight: 800;
+}
+
+.appointment-form-card > h2 span {
+    color: #6b6f3d;
+}
+
+
+/* =========================================================
+   INTRO TEXT
+========================================================= */
+
+.appointment-form-intro {
+    margin: -8px 0 18px;
+
+    color: #64748b;
+
+    font-size: 15px;
+    line-height: 1.65;
+}
+
+
+/* =========================================================
+   APPOINTMENT FORM
+========================================================= */
+
+.appointment-booking-form {
+    display: flex;
+    flex-direction: column;
+
+    gap: 12px;
+}
+
+.appointment-form-row {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 14px;
+}
+
+.separate-form-group {
+    width: 100%;
+}
+
+.separate-form-group label {
+    display: block;
+
+    margin-bottom: 6px;
+
+    color: #1e293b;
+
+    font-size: 14px;
+    line-height: 1.4;
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   FORM CONTROLS
+========================================================= */
+
+.separate-form-group input,
+.separate-form-group select,
+.separate-form-group textarea {
+    width: 100%;
+
+    box-sizing: border-box;
+
+    border: 1px solid #d9e0d0;
+    outline: none;
+    border-radius: 9px;
+
+    background: #fafbf8;
+
+    color: #1e293b;
+
+    font-family: inherit;
+    font-size: 15px;
+
+    transition:
+        border-color 0.2s ease,
+        background 0.2s ease,
+        box-shadow 0.2s ease;
+}
+
+.separate-form-group input,
+.separate-form-group select {
+    min-height: 50px;
+    height: 50px;
+
+    padding: 0 14px;
+}
+
+.separate-form-group select {
+    cursor: pointer;
+}
+
+.separate-form-group textarea {
+    min-height: 100px;
+    height: 100px;
+
+    padding: 12px 14px;
+
+    line-height: 1.5;
+
+    resize: vertical;
+}
+
+.separate-form-group input::placeholder,
+.separate-form-group textarea::placeholder {
+    color: #8b939f;
+}
+
+.separate-form-group input:focus,
+.separate-form-group select:focus,
+.separate-form-group textarea:focus {
+    border-color: #6b6f3d;
+
+    background: #ffffff;
+
+    box-shadow: 0 0 0 3px rgba(107, 111, 61, 0.08);
+}
+
+
+/* =========================================================
+   SUBMIT BUTTON
+========================================================= */
+
+.separate-submit-btn {
+    width: max-content;
+    min-height: 48px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-top: 2px;
+    padding: 0 25px;
+
+    border: 0;
+    border-radius: 30px;
+
+    background: #6b6f3d;
+
+    color: #ffffff;
+
+    cursor: pointer;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 700;
+
+    box-shadow: 0 10px 22px rgba(107, 111, 61, 0.2);
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.separate-submit-btn:hover {
+    background: #575a32;
+
+    transform: translateY(-2px);
+}
+
+.separate-submit-btn i {
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .inner-page-banner {
+        margin-top: 76px;
+
+        padding: 38px 20px 40px;
+    }
+
+    .appointment-page {
+        padding: 55px 20px;
+    }
+
+    .appointment-page-grid {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    .appointment-doctor-side {
+        width: 100%;
+        max-width: 700px;
+        min-height: auto;
+
+        margin: 0 auto;
+    }
+
+    .appointment-image-box {
+        height: 500px;
+    }
+
+    .appointment-doctor-content h2 {
+        font-size: 28px;
+    }
+
+    .appointment-doctor-content p {
+        font-size: 15px;
+    }
+
+    .appointment-form-card {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        padding: 30px;
+    }
+
+    .appointment-form-card > h2 {
+        font-size: 43px;
+    }
+
+    .appointment-form-intro {
+        font-size: 14.5px;
+    }
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .inner-page-banner {
+        margin-top: 70px;
+
+        padding: 30px 15px 34px;
+    }
+
+    .inner-breadcrumb {
+        gap: 7px;
+
+        margin-bottom: 10px;
+
+        font-size: 12px;
+    }
+
+    .inner-page-banner h1 {
+        font-size: 34px;
+    }
+
+    .inner-page-banner p {
+        font-size: 14px;
+        line-height: 1.6;
+    }
+
+    .appointment-page {
+        padding: 45px 15px;
+    }
+
+    .appointment-page-grid {
+        gap: 28px;
+    }
+
+    .appointment-doctor-side {
+        border-radius: 18px;
+    }
+
+    .appointment-image-box {
+        height: 420px;
+    }
+
+    .appointment-doctor-content {
+        padding: 22px 20px 24px;
+    }
+
+    .appointment-doctor-label {
+        font-size: 11px;
+    }
+
+    .appointment-doctor-content h2 {
+        font-size: 25px;
+    }
+
+    .appointment-doctor-content p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .appointment-form-card {
+        padding: 24px 18px;
+
+        border-radius: 17px;
+    }
+
+    .page-small-title {
+        font-size: 14px;
+    }
+
+    .appointment-form-card > h2 {
+        margin-bottom: 18px;
+
+        font-size: 35px;
+    }
+
+    .appointment-form-intro {
+        margin: -5px 0 17px;
+
+        font-size: 14px;
+    }
+
+    .appointment-booking-form {
+        gap: 11px;
+    }
+
+    .appointment-form-row {
+        grid-template-columns: 1fr;
+
+        gap: 12px;
+    }
+
+    .separate-form-group label {
+        font-size: 13px;
+    }
+
+    .separate-form-group input,
+    .separate-form-group select,
+    .separate-form-group textarea {
+        font-size: 14px;
+    }
+
+    .separate-form-group input,
+    .separate-form-group select {
+        min-height: 47px;
+        height: 47px;
+    }
+
+    .separate-form-group textarea {
+        min-height: 90px;
+        height: 90px;
+    }
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .inner-page-banner {
+        margin-top: 68px;
+    }
+
+    .inner-page-banner h1 {
+        font-size: 31px;
+    }
+
+    .inner-page-banner p {
+        font-size: 13px;
+    }
+
+    .appointment-image-box {
+        height: 360px;
+    }
+
+    .appointment-doctor-content h2 {
+        font-size: 23px;
+    }
+
+    .appointment-doctor-content p {
+        font-size: 13.5px;
+    }
+
+    .appointment-form-card > h2 {
+        font-size: 32px;
+    }
+
+    .separate-submit-btn {
+        width: 100%;
+    }
+}

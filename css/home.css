@@ -1,0 +1,2326 @@
+/* =========================================================
+   HOME PAGE
+   Dr. Muthineni Rajini
+
+   IMPORTANT:
+   - Home visible content minimum font-size: 14px
+   - Header / Footer remain common in style.css
+   - Responsive: Desktop / Tablet / Mobile
+========================================================= */
+
+
+/* =========================================================
+   HOME PAGE GLOBAL
+========================================================= */
+
+.home-page,
+.home-page main,
+main {
+    width: 100%;
+}
+
+.home-page {
+    font-size: 16px;
+}
+
+/*
+   IMPORTANT:
+   Home page normal visible content should never look tiny.
+*/
+.home-page p,
+.home-page li,
+.home-page a,
+.home-page button,
+.home-page label,
+.home-page span {
+    font-size: max(14px, 1em);
+}
+
+
+/* =========================================================
+   FIXED HEADER OFFSET
+========================================================= */
+
+body {
+    padding-top: var(--header-height);
+}
+
+
+/* =========================================================
+   HERO SECTION
+========================================================= */
+
+.home-hero {
+    position: relative;
+
+    width: 100%;
+    height: 590px;
+
+    overflow: hidden;
+
+    background: #102a38;
+}
+
+
+.home-hero-track {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.home-hero-slide {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    opacity: 0;
+    visibility: hidden;
+
+    pointer-events: none;
+
+    transition:
+        opacity 0.65s ease,
+        visibility 0.65s ease;
+}
+
+
+.home-hero-slide.active {
+    opacity: 1;
+    visibility: visible;
+
+    pointer-events: auto;
+}
+
+
+/* =========================================================
+   HERO BACKGROUND
+========================================================= */
+
+.home-hero-bg {
+    position: absolute;
+
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+}
+
+
+.home-hero-bg img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center;
+}
+
+
+.home-hero-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(8, 34, 49, 0.95) 0%,
+            rgba(12, 38, 47, 0.84) 35%,
+            rgba(13, 41, 44, 0.48) 64%,
+            rgba(8, 36, 51, 0.22) 100%
+        );
+}
+
+
+/* =========================================================
+   HERO CONTENT
+========================================================= */
+
+.home-hero-container {
+    position: relative;
+    z-index: 3;
+
+    display: flex;
+    align-items: center;
+
+    width: min(calc(100% - 48px), 1200px);
+    height: 100%;
+
+    margin-left: auto;
+    margin-right: auto;
+
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.home-hero-content {
+    width: 100%;
+    max-width: 750px;
+
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.home-hero-eyebrow {
+    margin: 0 0 16px;
+
+    color: #e0c257;
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.5;
+
+    font-weight: 800;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+
+.home-hero-content h1,
+.home-hero-content h2 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(46px, 4.6vw, 66px);
+
+    line-height: 1.04;
+
+    font-weight: 700;
+}
+
+
+.home-hero-content h1 span,
+.home-hero-content h2 span {
+    display: block;
+
+    color: #dfc25b;
+
+    font-size: inherit;
+}
+
+
+.home-hero-content h3 {
+    margin: 0 0 18px;
+
+    color: #ffffff;
+
+    font-family: var(--font-body);
+
+    font-size: 19px;
+
+    line-height: 1.5;
+
+    font-weight: 700;
+}
+
+
+.home-hero-content p {
+    max-width: 650px;
+
+    margin: 0 0 28px;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 16px !important;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   HERO BUTTONS
+========================================================= */
+
+.home-hero-actions {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    align-items: center;
+
+    gap: 13px;
+}
+
+
+.home-primary-btn,
+.home-outline-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 50px;
+
+    padding: 12px 23px;
+
+    border-radius: 7px;
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.home-primary-btn {
+    color: #ffffff;
+
+    background: var(--primary);
+}
+
+
+.home-primary-btn:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+}
+
+
+.home-outline-btn {
+    color: #ffffff;
+
+    border: 1px solid rgba(255, 255, 255, 0.72);
+
+    background: transparent;
+}
+
+
+.home-outline-btn:hover {
+    color: var(--dark);
+
+    border-color: #ffffff;
+
+    background: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HERO ARROWS
+========================================================= */
+
+.home-hero-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    padding: 0;
+
+    border: 1px solid rgba(255, 255, 255, 0.58);
+
+    border-radius: 50%;
+
+    background: rgba(10, 39, 50, 0.18);
+
+    color: #ffffff;
+
+    font-size: 18px !important;
+
+    transform: translateY(-50%);
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        border-color 0.25s ease,
+        color 0.25s ease;
+}
+
+
+.home-hero-arrow:hover {
+    border-color: #dfc25b;
+
+    background: #dfc25b;
+
+    color: #173948;
+}
+
+
+.home-hero-prev {
+    left: 22px;
+}
+
+
+.home-hero-next {
+    right: 22px;
+}
+
+
+/* =========================================================
+   HERO DOTS
+   FIXED: ALWAYS BOTTOM CENTER
+========================================================= */
+
+.home-hero .home-hero-dots {
+    position: absolute;
+
+    left: 50% !important;
+    right: auto !important;
+    bottom: 18px;
+
+    z-index: 20;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    width: auto;
+
+    margin: 0;
+    padding: 0;
+
+    transform: translateX(-50%);
+}
+
+
+.home-hero .home-hero-dot {
+    display: block;
+
+    flex: 0 0 auto;
+
+    width: 9px;
+    height: 9px;
+
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.68);
+
+    cursor: pointer;
+
+    transition:
+        width 0.25s ease,
+        background 0.25s ease;
+}
+
+
+.home-hero .home-hero-dot.active {
+    width: 29px;
+    height: 9px;
+
+    border-radius: 20px;
+
+    background: #dfc25b;
+}
+
+
+/* =========================================================
+   HOME ABOUT
+========================================================= */
+
+.home-about-new {
+    padding: 95px 0;
+
+    background: #ffffff;
+}
+
+
+.home-about-new-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.92fr)
+        minmax(0, 1.08fr);
+
+    align-items: center;
+
+    gap: 72px;
+}
+
+
+/* =========================================================
+   HOME ABOUT IMAGE
+========================================================= */
+
+.home-about-new-visual {
+    position: relative;
+}
+
+
+.home-about-new-image {
+    overflow: hidden;
+
+    border-radius: 28px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 18px 45px
+        rgba(34, 46, 40, 0.07);
+}
+
+
+.home-about-new-image img {
+    display: block;
+
+    width: 100%;
+    height: 560px;
+
+    object-fit: contain;
+
+    object-position: center bottom;
+}
+
+
+.home-about-experience {
+    position: absolute;
+
+    right: 22px;
+    bottom: 22px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 15px 19px;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 14px;
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+    box-shadow:
+        0 12px 25px
+        rgba(26, 48, 40, 0.15);
+}
+
+
+.home-about-experience strong {
+    color: #ffffff;
+
+    font-family: var(--font-heading);
+
+    font-size: 34px;
+
+    line-height: 1;
+}
+
+
+.home-about-experience span {
+    max-width: 135px;
+
+    color: #ffffff;
+
+    font-size: 14px !important;
+
+    line-height: 1.35;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HOME ABOUT CONTENT
+========================================================= */
+
+.home-section-eyebrow {
+    display: block;
+
+    margin: 0 0 14px;
+
+    color: var(--primary);
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.5;
+
+    font-weight: 800;
+
+    letter-spacing: 0.11em;
+
+    text-transform: uppercase;
+}
+
+
+.home-about-new-content h2 {
+    margin: 0 0 17px;
+
+    color: #15283e;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(40px, 4vw, 54px);
+
+    line-height: 1.06;
+}
+
+
+.home-about-new-content h2 span {
+    display: block;
+
+    color: var(--primary);
+
+    font-size: inherit;
+}
+
+
+.home-about-new-content h3 {
+    margin: 0 0 20px;
+
+    color: #15283e;
+
+    font-size: 19px;
+
+    line-height: 1.55;
+
+    font-weight: 700;
+}
+
+
+.home-about-new-content p {
+    margin: 0 0 16px;
+
+    color: #596675;
+
+    font-size: 16px !important;
+
+    line-height: 1.85;
+}
+
+
+.home-about-check {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    margin: 23px 0;
+
+    color: var(--primary);
+
+    font-size: 15px !important;
+
+    line-height: 1.5;
+
+    font-weight: 700;
+}
+
+
+.home-about-check i {
+    font-size: 16px;
+}
+
+
+.home-about-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 48px;
+
+    padding: 11px 22px;
+
+    border-radius: 999px;
+
+    background: var(--primary);
+
+    color: #ffffff;
+
+    font-size: 14px !important;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.home-about-button:hover {
+    background: var(--primary-dark);
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   MEDICAL EXCELLENCE
+========================================================= */
+
+.medical-excellence-section {
+    padding: 95px 0;
+
+    background: #f9faf5;
+}
+
+
+/* =========================================================
+   MEDICAL EXCELLENCE HEADING
+========================================================= */
+
+.excellence-heading {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto 54px;
+
+    text-align: center;
+}
+
+
+.excellence-heading .pill-label {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    margin: 0 0 18px;
+
+    padding: 9px 16px;
+
+    border-radius: 999px;
+
+    background: #fffaf0;
+
+    color: #c89726;
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.4;
+
+    font-weight: 800;
+
+    letter-spacing: 0.12em;
+
+    text-transform: uppercase;
+}
+
+
+.excellence-heading .pill-label::before {
+    content: "";
+
+    display: block;
+
+    width: 7px;
+    height: 7px;
+
+    border-radius: 50%;
+
+    background: #c89726;
+}
+
+
+.excellence-heading h2 {
+    margin: 0 0 18px;
+
+    color: #18283e;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(42px, 4vw, 54px);
+
+    line-height: 1.08;
+}
+
+
+.excellence-heading h2 span {
+    display: block;
+
+    color: #7e8842;
+
+    font-size: inherit;
+
+    font-style: italic;
+}
+
+
+.excellence-heading > p {
+    max-width: 720px;
+
+    margin: 0 auto;
+
+    color: #627081;
+
+    font-size: 16px !important;
+
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   MEDICAL EXCELLENCE BODY
+========================================================= */
+
+.excellence-body {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.88fr)
+        minmax(0, 1.12fr);
+
+    align-items: stretch;
+
+    gap: 42px;
+
+    width: 100%;
+    max-width: 1150px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   EXCELLENCE IMAGE
+========================================================= */
+
+.excellence-photo {
+    position: relative;
+
+    min-height: 530px;
+
+    overflow: visible;
+
+    border-radius: 26px;
+}
+
+
+.excellence-photo > img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    min-height: 530px;
+
+    object-fit: cover;
+
+    border-radius: 26px;
+
+    box-shadow:
+        0 16px 40px
+        rgba(34, 48, 40, 0.08);
+}
+
+
+/* =========================================================
+   SMALL IMAGE BADGE
+========================================================= */
+
+.expertise-float {
+    position: absolute;
+
+    right: 18px;
+    bottom: 18px;
+
+    width: auto;
+    max-width: 280px;
+
+    padding: 14px 19px;
+
+    border: 3px solid #ffffff;
+
+    border-radius: 13px;
+
+    background: #858d43;
+
+    color: #ffffff;
+
+    box-shadow:
+        0 9px 24px
+        rgba(35, 50, 40, 0.15);
+}
+
+
+.expertise-float span {
+    display: block;
+
+    margin: 0 0 4px;
+
+    color: #ffffff;
+
+    font-size: 14px !important;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+
+    letter-spacing: 0.07em;
+
+    text-transform: uppercase;
+}
+
+
+.expertise-float strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-size: 15px;
+
+    line-height: 1.45;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   EXCELLENCE RIGHT SIDE
+========================================================= */
+
+.excellence-right {
+    display: flex;
+
+    flex-direction: column;
+
+    justify-content: center;
+}
+
+
+.excellence-lists {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 17px;
+}
+
+
+.excellence-list-card {
+    display: grid;
+
+    grid-template-columns:
+        44px minmax(0, 1fr);
+
+    align-items: start;
+
+    gap: 13px;
+
+    min-height: 205px;
+
+    padding: 21px 19px;
+
+    border: 1px solid #e6e5da;
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 22px
+        rgba(36, 51, 42, 0.04);
+}
+
+
+.excellence-list-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 42px;
+    height: 42px;
+
+    border-radius: 10px;
+
+    background: #f0f1df;
+
+    color: #858d43;
+
+    font-size: 17px;
+}
+
+
+.excellence-list-card h3 {
+    margin: 2px 0 10px;
+
+    color: #14263c;
+
+    font-family: var(--font-ui);
+
+    font-size: 16px;
+
+    line-height: 1.4;
+
+    font-weight: 800;
+
+    letter-spacing: 0.025em;
+
+    text-transform: uppercase;
+}
+
+
+.excellence-list-card ul {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 8px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.excellence-list-card li {
+    position: relative;
+
+    padding-left: 17px;
+
+    color: #5f6b7b;
+
+    font-size: 14px !important;
+
+    line-height: 1.6;
+}
+
+
+.excellence-list-card li::before {
+    content: "•";
+
+    position: absolute;
+
+    top: 0;
+    left: 0;
+
+    color: #c99f37;
+
+    font-size: 15px;
+}
+
+
+/* =========================================================
+   EXCELLENCE BUTTONS
+========================================================= */
+
+.excellence-actions {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 13px;
+
+    margin-top: 29px;
+}
+
+
+.excellence-actions .btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    min-height: 48px;
+
+    padding: 11px 22px;
+
+    font-size: 14px !important;
+
+    line-height: 1.3;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   OUR EXPERTISE
+========================================================= */
+
+.home-expertise-section {
+    padding: 95px 0;
+
+    background: #fbfaf6;
+}
+
+
+.home-expertise-heading {
+    width: 100%;
+
+    margin: 0 0 48px;
+
+    text-align: center;
+}
+
+
+.home-expertise-eyebrow {
+    display: block;
+
+    margin: 0 0 13px;
+
+    color: #d2a21f;
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.4;
+
+    font-weight: 800;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+
+.home-expertise-heading h2 {
+    margin: 0;
+
+    color: #315a35;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(42px, 4vw, 54px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+
+.home-expertise-heading h2 em {
+    color: #d7a925;
+
+    font-size: inherit;
+
+    font-style: normal;
+
+    font-weight: 700;
+}
+
+
+/* REMOVE OLD LINE */
+
+.home-heading-line {
+    display: none !important;
+}
+
+
+/* =========================================================
+   EXPERTISE MASONRY
+========================================================= */
+
+.home-expertise-masonry {
+    width: 100%;
+    max-width: 1080px;
+
+    margin: 0 auto;
+
+    columns: 3;
+
+    column-gap: 25px;
+}
+
+
+.home-expertise-detail-card {
+    display: inline-block;
+
+    width: 100%;
+
+    margin: 0 0 25px;
+
+    padding: 28px 27px 27px;
+
+    break-inside: avoid;
+
+    border: 1px solid rgba(49, 90, 53, 0.07);
+
+    border-radius: 24px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 13px 30px
+        rgba(35, 53, 44, 0.055);
+}
+
+
+.home-expertise-detail-card.featured {
+    border-color: rgba(215, 169, 37, 0.55);
+}
+
+
+.home-expertise-card-head {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+}
+
+
+.home-expertise-card-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 42px;
+
+    width: 42px;
+    height: 42px;
+
+    border: 1px solid rgba(215, 169, 37, 0.4);
+
+    border-radius: 10px;
+
+    background: #fffdf7;
+
+    color: #d8aa27;
+
+    font-size: 18px;
+}
+
+
+.home-expertise-detail-card.featured
+.home-expertise-card-icon {
+    border-color: #d7aa29;
+
+    background: #d7aa29;
+
+    color: #ffffff;
+}
+
+
+.home-expertise-card-head h3 {
+    margin: 0;
+
+    color: #315a35;
+
+    font-family: var(--font-ui);
+
+    font-size: 18px;
+
+    line-height: 1.4;
+
+    font-weight: 800;
+
+    letter-spacing: 0.035em;
+}
+
+
+.home-expertise-divider {
+    width: 100%;
+    height: 1px;
+
+    margin: 16px 0 18px;
+
+    background: rgba(49, 90, 53, 0.13);
+}
+
+
+.home-expertise-detail-card ul {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 11px;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.home-expertise-detail-card li {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 9px;
+
+    color: #52606d;
+
+    font-size: 14px !important;
+
+    line-height: 1.65;
+}
+
+
+.expertise-star {
+    flex: 0 0 auto;
+
+    color: #dfba49;
+
+    font-size: 14px !important;
+}
+
+
+/* =========================================================
+   HEALTHCARE SERVICES
+========================================================= */
+
+.home-healthcare-section {
+    width: 100%;
+
+    padding: 95px 0;
+
+    overflow: hidden;
+
+    background: #fbfaf4;
+}
+
+
+/* =========================================================
+   SERVICES HEADING - CENTER
+========================================================= */
+
+.home-healthcare-heading {
+    width: 100%;
+    max-width: 850px;
+
+    margin: 0 auto 38px;
+
+    text-align: center;
+}
+
+
+.home-healthcare-eyebrow {
+    display: block;
+
+    margin: 0 0 13px;
+
+    color: #d4a31d;
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.4;
+
+    font-weight: 800;
+
+    letter-spacing: 0.13em;
+
+    text-transform: uppercase;
+}
+
+
+.home-healthcare-heading h2 {
+    margin: 0;
+
+    color: #174d3b;
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(42px, 4vw, 54px);
+
+    line-height: 1.08;
+
+    font-weight: 700;
+}
+
+
+.home-healthcare-heading h2 em {
+    display: block;
+
+    color: #d9aa26;
+
+    font-size: inherit;
+
+    font-style: italic;
+
+    font-weight: 600;
+}
+
+
+.home-healthcare-line {
+    display: block;
+
+    width: 60px;
+    height: 4px;
+
+    margin: 16px auto 0;
+
+    border-radius: 999px;
+
+    background: #d8a71e;
+}
+
+
+/* =========================================================
+   OUR SPECIALITIES
+========================================================= */
+
+.home-specialities-title {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 13px;
+
+    margin: 0 auto 32px;
+
+    text-align: left;
+}
+
+
+.home-specialities-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 45px;
+
+    width: 45px;
+    height: 45px;
+
+    border-radius: 10px;
+
+    background: #edf0e7;
+
+    color: #174d3b;
+
+    font-size: 18px;
+}
+
+
+.home-specialities-title h3 {
+    margin: 0 0 3px;
+
+    color: #174d3b;
+
+    font-size: 19px;
+
+    line-height: 1.35;
+}
+
+
+.home-specialities-title p {
+    margin: 0;
+
+    color: #67766e;
+
+    font-size: 14px !important;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   HEALTHCARE CAROUSEL
+========================================================= */
+
+.home-healthcare-slider {
+    position: relative;
+
+    width: 100%;
+
+    padding: 0 52px;
+}
+
+
+.home-healthcare-viewport {
+    width: 100%;
+
+    overflow: hidden;
+}
+
+
+.home-healthcare-track {
+    display: flex;
+
+    align-items: stretch;
+
+    gap: 18px;
+
+    will-change: transform;
+}
+
+
+/* =========================================================
+   HEALTHCARE CARD
+========================================================= */
+
+.home-healthcare-card {
+    position: relative;
+
+    flex: 0 0 calc((100% - 54px) / 4);
+
+    height: 420px;
+
+    overflow: hidden;
+
+    border-radius: 23px;
+
+    background: #14563f;
+
+    box-shadow:
+        0 12px 30px
+        rgba(30, 52, 41, 0.09);
+}
+
+
+.home-healthcare-card > img {
+    position: absolute;
+
+    inset: 0;
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.5s ease;
+}
+
+
+.home-healthcare-card:hover > img {
+    transform: scale(1.045);
+}
+
+
+.home-healthcare-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    z-index: 1;
+
+    background:
+        linear-gradient(
+            180deg,
+            rgba(12, 43, 34, 0.02) 12%,
+            rgba(12, 43, 34, 0.16) 42%,
+            rgba(10, 51, 38, 0.96) 100%
+        );
+}
+
+
+.home-healthcare-card-content {
+    position: absolute;
+
+    z-index: 2;
+
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+    padding: 26px 21px 22px;
+}
+
+
+.home-healthcare-category {
+    display: block;
+
+    margin: 0 0 7px;
+
+    color: #e1ba3d;
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+
+    letter-spacing: 0.06em;
+
+    text-transform: uppercase;
+}
+
+
+.home-healthcare-card h3 {
+    margin: 0 0 9px;
+
+    color: #ffffff;
+
+    font-family: var(--font-ui);
+
+    font-size: 20px;
+
+    line-height: 1.3;
+
+    font-weight: 800;
+}
+
+
+.home-healthcare-card p {
+    margin: 0 0 16px;
+
+    color: rgba(255, 255, 255, 0.93);
+
+    font-size: 14px !important;
+
+    line-height: 1.65;
+}
+
+
+.home-healthcare-btn {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 8px;
+
+    min-height: 38px;
+
+    padding: 7px 17px;
+
+    border-radius: 999px;
+
+    background: #e0b526;
+
+    color: #174d3b;
+
+    font-family: var(--font-ui);
+
+    font-size: 14px !important;
+
+    line-height: 1.2;
+
+    font-weight: 800;
+
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+
+.home-healthcare-btn:hover {
+    background: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   HEALTHCARE ARROWS
+========================================================= */
+
+.healthcare-arrow {
+    position: absolute;
+
+    top: 50%;
+
+    z-index: 10;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    border: 1px solid rgba(215, 169, 37, 0.55);
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color: #174d3b;
+
+    font-size: 17px !important;
+
+    transform: translateY(-50%);
+
+    box-shadow:
+        0 7px 18px
+        rgba(29, 54, 42, 0.08);
+
+    cursor: pointer;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease;
+}
+
+
+.healthcare-arrow:hover {
+    border-color: #d7aa29;
+
+    background: #d7aa29;
+
+    color: #ffffff;
+}
+
+
+.healthcare-prev {
+    left: 0;
+}
+
+
+.healthcare-next {
+    right: 0;
+}
+
+
+/* =========================================================
+   CLINICAL JOURNAL
+   TYPOGRAPHY CORRECTIONS
+========================================================= */
+
+.clinical-journal-section,
+.home-journal-section {
+    font-size: 16px;
+}
+
+
+.clinical-journal-section p,
+.clinical-journal-section li,
+.clinical-journal-section a,
+.home-journal-section p,
+.home-journal-section li,
+.home-journal-section a {
+    font-size: 14px !important;
+
+    line-height: 1.7;
+}
+
+
+.clinical-journal-section h3,
+.home-journal-section h3 {
+    font-size: 19px;
+
+    line-height: 1.4;
+}
+
+
+/* =========================================================
+   ADVANCED LAPAROSCOPIC SOLUTIONS
+   TYPOGRAPHY CORRECTIONS
+========================================================= */
+
+.laparoscopic-section,
+.home-laparoscopic-section {
+    font-size: 16px;
+}
+
+
+.laparoscopic-section p,
+.laparoscopic-section a,
+.home-laparoscopic-section p,
+.home-laparoscopic-section a {
+    font-size: 14px !important;
+
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   HOME CONTACT / CONSULTATION
+   KEEP NORMAL CONTENT READABLE
+========================================================= */
+
+#contact p,
+#contact li,
+#contact a,
+#contact label,
+#contact input,
+#contact textarea,
+#contact select,
+.home-contact-section p,
+.home-contact-section li,
+.home-contact-section a,
+.home-contact-section label,
+.home-contact-section input,
+.home-contact-section textarea,
+.home-contact-section select {
+    font-size: 14px !important;
+
+    line-height: 1.6;
+}
+
+
+#contact h3,
+.home-contact-section h3 {
+    font-size: 19px;
+}
+
+
+/* =========================================================
+   HOME TESTIMONIAL / FAQ CONTENT
+========================================================= */
+
+#home-testimonials p,
+#home-testimonials span,
+#home-testimonials button,
+#home-faq p,
+#home-faq span,
+#home-faq button {
+    font-size: 14px !important;
+}
+
+
+#home-faq .faq-question {
+    font-size: 16px !important;
+
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    body {
+        padding-top: 76px;
+    }
+
+
+    /* HERO */
+
+    .home-hero {
+        height: 550px;
+    }
+
+
+    .home-hero-content {
+        max-width: 610px;
+    }
+
+
+    .home-hero-content h1,
+    .home-hero-content h2 {
+        font-size: 48px;
+    }
+
+
+    /* DOTS */
+
+    .home-hero .home-hero-dots {
+        left: 50% !important;
+        right: auto !important;
+
+        bottom: 16px;
+
+        transform: translateX(-50%);
+    }
+
+
+    /* ABOUT */
+
+    .home-about-new-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+
+    .home-about-new-image {
+        max-width: 650px;
+
+        margin: 0 auto;
+    }
+
+
+    .home-about-new-image img {
+        height: 540px;
+    }
+
+
+    /* EXCELLENCE */
+
+    .excellence-body {
+        grid-template-columns: 1fr;
+
+        max-width: 740px;
+    }
+
+
+    .excellence-photo,
+    .excellence-photo > img {
+        min-height: 510px;
+    }
+
+
+    /* EXPERTISE */
+
+    .home-expertise-masonry {
+        columns: 2;
+
+        column-gap: 20px;
+    }
+
+
+    /* SERVICES */
+
+    .home-healthcare-card {
+        flex: 0 0 calc((100% - 18px) / 2);
+
+        height: 420px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+    body {
+        padding-top: 70px;
+    }
+
+
+    /* =====================================================
+       HERO
+    ===================================================== */
+
+    .home-hero {
+        height: 590px;
+    }
+
+
+    .home-hero-container {
+        align-items: flex-end;
+
+        padding-bottom: 78px;
+    }
+
+
+    .home-hero-overlay {
+        background:
+            linear-gradient(
+                180deg,
+                rgba(10, 34, 45, 0.26) 0%,
+                rgba(10, 34, 45, 0.72) 43%,
+                rgba(10, 34, 45, 0.97) 100%
+            );
+    }
+
+
+    .home-hero-content {
+        max-width: 100%;
+    }
+
+
+    .home-hero-eyebrow {
+        font-size: 14px !important;
+    }
+
+
+    .home-hero-content h1,
+    .home-hero-content h2 {
+        font-size: 38px;
+
+        line-height: 1.08;
+    }
+
+
+    .home-hero-content h3 {
+        font-size: 17px;
+    }
+
+
+    .home-hero-content p {
+        font-size: 14px !important;
+
+        line-height: 1.7;
+    }
+
+
+    .home-primary-btn,
+    .home-outline-btn {
+        min-height: 46px;
+
+        padding: 10px 17px;
+
+        font-size: 14px !important;
+    }
+
+
+    .home-hero-arrow {
+        top: 47%;
+
+        width: 38px;
+        height: 38px;
+
+        font-size: 16px !important;
+    }
+
+
+    .home-hero-prev {
+        left: 10px;
+    }
+
+
+    .home-hero-next {
+        right: 10px;
+    }
+
+
+    .home-hero .home-hero-dots {
+        left: 50% !important;
+        right: auto !important;
+
+        bottom: 14px;
+
+        transform: translateX(-50%);
+    }
+
+
+    /* =====================================================
+       COMMON SECTION SPACING
+    ===================================================== */
+
+    .home-about-new,
+    .medical-excellence-section,
+    .home-expertise-section,
+    .home-healthcare-section {
+        padding: 65px 0;
+    }
+
+
+    /* =====================================================
+       ABOUT
+    ===================================================== */
+
+    .home-about-new-grid {
+        gap: 36px;
+    }
+
+
+    .home-about-new-image img {
+        height: 440px;
+    }
+
+
+    .home-about-experience {
+        right: 12px;
+        bottom: 12px;
+    }
+
+
+    .home-about-experience strong {
+        font-size: 30px;
+    }
+
+
+    .home-about-new-content h2 {
+        font-size: 34px;
+    }
+
+
+    .home-about-new-content h3 {
+        font-size: 18px;
+    }
+
+
+    .home-about-new-content p {
+        font-size: 14px !important;
+    }
+
+
+    /* =====================================================
+       EXCELLENCE
+    ===================================================== */
+
+    .excellence-heading {
+        margin-bottom: 36px;
+    }
+
+
+    .excellence-heading h2,
+    .home-expertise-heading h2,
+    .home-healthcare-heading h2 {
+        font-size: 34px;
+    }
+
+
+    .excellence-heading > p {
+        font-size: 14px !important;
+    }
+
+
+    .excellence-body {
+        gap: 28px;
+    }
+
+
+    .excellence-photo,
+    .excellence-photo > img {
+        min-height: 430px;
+    }
+
+
+    .expertise-float {
+        right: 12px;
+        bottom: 12px;
+
+        max-width: 230px;
+
+        padding: 12px 15px;
+    }
+
+
+    .expertise-float span {
+        font-size: 14px !important;
+    }
+
+
+    .expertise-float strong {
+        font-size: 14px;
+    }
+
+
+    .excellence-lists {
+        grid-template-columns: 1fr;
+    }
+
+
+    .excellence-list-card {
+        min-height: auto;
+
+        padding: 20px 18px;
+    }
+
+
+    .excellence-list-card h3 {
+        font-size: 16px;
+    }
+
+
+    .excellence-list-card li {
+        font-size: 14px !important;
+    }
+
+
+    /* =====================================================
+       EXPERTISE
+    ===================================================== */
+
+    .home-expertise-heading {
+        margin-bottom: 35px;
+    }
+
+
+    .home-expertise-masonry {
+        columns: 1;
+    }
+
+
+    .home-expertise-detail-card {
+        margin-bottom: 18px;
+
+        padding: 23px 20px;
+    }
+
+
+    .home-expertise-card-head h3 {
+        font-size: 18px;
+    }
+
+
+    .home-expertise-detail-card li {
+        font-size: 14px !important;
+    }
+
+
+    /* =====================================================
+       SERVICES
+    ===================================================== */
+
+    .home-healthcare-heading {
+        margin-bottom: 32px;
+    }
+
+
+    .home-specialities-title {
+        justify-content: center;
+
+        margin-bottom: 27px;
+    }
+
+
+    .home-specialities-title h3 {
+        font-size: 18px;
+    }
+
+
+    .home-specialities-title p {
+        font-size: 14px !important;
+    }
+
+
+    .home-healthcare-slider {
+        padding: 0 40px;
+    }
+
+
+    .home-healthcare-card {
+        flex: 0 0 100%;
+
+        height: 420px;
+    }
+
+
+    .home-healthcare-category {
+        font-size: 14px !important;
+    }
+
+
+    .home-healthcare-card h3 {
+        font-size: 19px;
+    }
+
+
+    .home-healthcare-card p {
+        font-size: 14px !important;
+    }
+
+
+    .home-healthcare-btn {
+        font-size: 14px !important;
+    }
+
+
+    .healthcare-arrow {
+        width: 36px;
+        height: 36px;
+
+        font-size: 15px !important;
+    }
+
+}
+
+
+/* =========================================================
+   VERY SMALL MOBILE
+========================================================= */
+
+@media (max-width: 420px) {
+
+    .home-hero-content h1,
+    .home-hero-content h2 {
+        font-size: 34px;
+    }
+
+
+    .home-about-new-content h2,
+    .excellence-heading h2,
+    .home-expertise-heading h2,
+    .home-healthcare-heading h2 {
+        font-size: 31px;
+    }
+
+
+    .home-healthcare-slider {
+        padding: 0 34px;
+    }
+
+
+    .home-healthcare-card {
+        height: 400px;
+    }
+
+}
+
+/* =========================================================
+   HERO RESPONSIVE CONTENT ALIGNMENT
+========================================================= */
+
+@media (max-width: 1199px) {
+
+    .home-hero-container {
+        width: min(calc(100% - 40px), 1100px);
+    }
+
+    .home-hero-content {
+        max-width: 620px;
+        margin-left: 25px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .home-hero-container {
+        width: calc(100% - 32px);
+
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .home-hero-content {
+        max-width: 100%;
+
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .home-hero-container {
+        width: calc(100% - 28px);
+    }
+
+    .home-hero-content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+    }
+
+}

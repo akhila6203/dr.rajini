@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Blog | Dr. Muthineni Rajini</title>
+    <link
+        rel="icon"
+        type="image/jpeg"
+        href="assets/images/logo-url.jpg"
+    >
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link
+        rel="stylesheet"
+        href="css/blog-details.css"
+    >
+
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    >
+
+</head>
+
+<body>
+
+<div id="header-placeholder"></div>
+
+
+<section class="blog-detail-banner">
+
+    <div class="container">
+
+        <div class="blog-detail-breadcrumb">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <a href="blog.html">
+                Blogs
+            </a>
+
+            <i class="fa-solid fa-chevron-right"></i>
+
+            <span id="detailBreadcrumb">
+                Blog
+            </span>
+
+        </div>
+
+        <h1 id="detailBannerTitle">
+            Blog
+        </h1>
+
+    </div>
+
+</section>
+
+
+<main class="blog-detail-page">
+
+    <div class="container blog-detail-layout">
+
+
+        <!-- LEFT -->
+
+        <article class="blog-detail-main">
+
+            <div class="detail-meta">
+
+                <span>
+                    <i class="fa-solid fa-user"></i>
+                    admin
+                </span>
+
+                <span>
+                    <i class="fa-regular fa-calendar"></i>
+                    <span id="detailDate"></span>
+                </span>
+
+                <span>
+                    <i class="fa-solid fa-tag"></i>
+                    <span id="detailCategory"></span>
+                </span>
+
+                <span>
+                    <i class="fa-regular fa-comment"></i>
+                    0 Comments
+                </span>
+
+            </div>
+
+
+            <img
+                id="detailImage"
+                class="detail-main-image"
+                src=""
+                alt=""
+            >
+
+
+            <div
+                class="detail-article-content"
+                id="detailContent"
+            ></div>
+
+
+            <div class="detail-author-card">
+
+                <img
+                    src="assets/images/owner.jpg"
+                    alt="Dr. Muthineni Rajini"
+                >
+
+                <div>
+
+                    <span>
+                        Author
+                    </span>
+
+                    <h3>
+                        Dr. Muthineni Rajini
+                    </h3>
+
+                    <p>
+                        Obstetrician &amp; Gynecologist dedicated
+                        to comprehensive women's healthcare.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <section class="comment-section">
+
+                <h2>
+                    Leave A Comment
+                </h2>
+
+                <p>
+                    Your email address will not be published.
+                </p>
+
+
+                <form
+                    class="comment-form"
+                    onsubmit="event.preventDefault();"
+                >
+
+                    <div class="comment-fields">
+
+                        <input
+                            type="text"
+                            placeholder="Name"
+                        >
+
+                        <input
+                            type="email"
+                            placeholder="Email"
+                        >
+
+                        <input
+                            type="tel"
+                            placeholder="Phone"
+                        >
+
+                    </div>
+
+
+                    <textarea
+                        placeholder="Comment"
+                    ></textarea>
+
+
+                    <button type="submit">
+                        Post Comment
+                    </button>
+
+                </form>
+
+            </section>
+
+        </article>
+
+
+        <!-- RIGHT -->
+
+        <aside class="blog-detail-sidebar">
+
+            <div class="sidebar-box">
+
+                <h3>
+                    About Author
+                </h3>
+
+                <img
+                    src="assets/images/owner.jpg"
+                    alt="Dr. Muthineni Rajini"
+                    class="sidebar-doctor-image"
+                >
+
+                <h4>
+                    Dr. Muthineni Rajini
+                </h4>
+
+                <p>
+                    Experienced Obstetrician &amp; Gynecologist
+                    providing personalised women's healthcare.
+                </p>
+
+            </div>
+
+
+            <!-- NO CATEGORIES -->
+            <!-- NO SIDEBAR GALLERY -->
+
+
+            <div class="sidebar-box">
+
+                <h3>
+                    Recent Posts
+                </h3>
+
+                <div id="recentPosts"></div>
+
+            </div>
+
+        </aside>
+
+    </div>
+
+</main>
+
+
+<div id="footer-placeholder"></div>
+
+
+<script src="js/blog-data.js"></script>
+
+<script src="js/blog-details.js"></script>
+
+<script src="js/components.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>

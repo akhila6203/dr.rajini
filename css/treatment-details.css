@@ -1,0 +1,1373 @@
+/* =========================================================
+   TREATMENT DETAILS
+========================================================= */
+
+:root {
+    --td-dark-green: #173c2b;
+    --td-green: #24523b;
+    --td-olive: #747b3f;
+    --td-olive-dark: #626a35;
+    --td-gold: #9a873e;
+
+    --td-white: #ffffff;
+    --td-bg: #fafaf7;
+    --td-soft: #f5f6ef;
+
+    --td-text: #263d34;
+    --td-body: #5f6d67;
+    --td-border: #dfe3d6;
+
+    --td-shadow:
+        0 12px 32px rgba(25, 53, 39, 0.10);
+}
+
+
+/* =========================================================
+   HEADER PLACEHOLDER SAFETY
+   Keeps breadcrumb below the loaded header.
+========================================================= */
+
+#header-placeholder {
+    position: relative;
+    z-index: 1000;
+    width: 100%;
+}
+
+#header-placeholder:empty {
+    min-height: 0;
+}
+
+
+/* =========================================================
+   BREADCRUMB
+   CENTERED + BELOW HEADER
+========================================================= */
+/* =========================================================
+   BREADCRUMB
+   FIXED HEADER OFFSET + CENTER ALIGNMENT
+========================================================= */
+
+.treatment-breadcrumb-section {
+    position: relative;
+    z-index: 2;
+
+    clear: both;
+
+    width: 100%;
+
+    /* IMPORTANT:
+       site-header is fixed.
+       Same offset already used by treatments page.
+    */
+    margin: 92px 0 0 !important;
+
+    padding: 17px 20px;
+
+    background: #f5f6ef;
+
+    border-top: 1px solid #eceee5;
+    border-bottom: 1px solid #e1e4d8;
+
+    transform: none !important;
+}
+
+
+.treatment-breadcrumb-section .container {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+}
+
+
+.treatment-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    width: 100%;
+
+    gap: 10px;
+
+    margin: 0 auto;
+    padding: 0;
+
+    text-align: center;
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+
+.treatment-breadcrumb a {
+    color: var(--td-olive-dark);
+
+    text-decoration: none;
+
+    font-weight: 600;
+
+    transition: color 0.25s ease;
+}
+
+
+.treatment-breadcrumb a:hover {
+    color: var(--td-dark-green);
+}
+
+
+.treatment-breadcrumb i {
+    color: #9ca58f;
+
+    font-size: 9px;
+}
+
+
+.treatment-breadcrumb span {
+    color: var(--td-dark-green);
+
+    font-weight: 700;
+}
+
+/* =========================================================
+   HERO
+========================================================= */
+/* =========================================================
+   TREATMENT DETAILS HERO
+   FIXED HEADER OFFSET
+========================================================= */
+
+.treatment-detail-hero {
+    position: relative;
+
+    width: 100%;
+
+    /* Fixed header space */
+    margin-top: 92px;
+
+    padding: 34px 20px 42px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #68713a 0%,
+            #77783a 48%,
+            #94873d 100%
+        );
+
+    overflow: hidden;
+
+    text-align: center;
+}
+
+
+.treatment-detail-hero .container {
+    position: relative;
+    z-index: 2;
+
+    max-width: 1180px;
+
+    margin: 0 auto;
+
+    text-align: center;
+}
+
+
+/* =========================================================
+   BREADCRUMB INSIDE HERO
+========================================================= */
+
+.treatment-hero-breadcrumb {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex-wrap: wrap;
+
+    gap: 9px;
+
+    width: 100%;
+
+    margin: 0 auto 13px;
+
+    color: rgba(255, 255, 255, 0.88);
+
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 1.5;
+
+    text-align: center;
+}
+
+
+.treatment-hero-breadcrumb a {
+    color: rgba(255, 255, 255, 0.88);
+
+    text-decoration: none;
+
+    transition:
+        color 0.25s ease,
+        opacity 0.25s ease;
+}
+
+
+.treatment-hero-breadcrumb a:hover {
+    color: #ffffff;
+}
+
+
+.treatment-hero-breadcrumb i {
+    color: rgba(255, 255, 255, 0.62);
+
+    font-size: 8px;
+}
+
+
+.treatment-hero-breadcrumb span {
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   HERO TITLE
+========================================================= */
+
+.treatment-detail-hero h1 {
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family: Georgia, "Times New Roman", serif;
+
+    font-size: clamp(38px, 4vw, 56px);
+
+    font-weight: 700;
+
+    line-height: 1.08;
+}
+
+
+/* =========================================================
+   HERO DESCRIPTION
+========================================================= */
+
+.treatment-detail-hero > .container > p {
+    max-width: 760px;
+
+    margin: 12px auto 0;
+
+    color: rgba(255, 255, 255, 0.94);
+
+    font-size: 16px;
+
+    line-height: 1.7;
+}
+
+/* =========================================================
+   MAIN PAGE
+========================================================= */
+
+.treatment-detail-page {
+    padding: 50px 20px 75px;
+
+    background: #ffffff;
+}
+
+
+.treatment-detail-page > .container {
+    width: 100%;
+    max-width: 1180px;
+
+    margin: 0 auto;
+}
+
+
+/* =========================================================
+   TWO COLUMN LAYOUT
+========================================================= */
+
+.treatment-detail-layout {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 1fr)
+        310px;
+
+    gap: 30px;
+
+    align-items: start;
+}
+
+
+.treatment-main-content {
+    min-width: 0;
+}
+
+
+/* =========================================================
+   MAIN IMAGE
+========================================================= */
+
+.treatment-main-image {
+    width: 100%;
+    height: 410px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: #edf0e9;
+
+    box-shadow:
+        0 12px 30px rgba(23, 60, 43, 0.10);
+}
+
+
+.treatment-main-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: transform 0.45s ease;
+}
+
+
+.treatment-main-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   MAIN TITLE
+========================================================= */
+
+.treatment-main-title {
+    margin: 30px 0 14px;
+
+    color: var(--td-dark-green);
+
+    font-size: clamp(31px, 3vw, 40px);
+
+    font-weight: 700;
+
+    line-height: 1.18;
+}
+
+
+/* =========================================================
+   INTRODUCTION
+========================================================= */
+
+.treatment-introduction {
+    margin: 0;
+
+    max-width: 100%;
+
+    color: #566b64;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size: 17px;
+
+    font-style: italic;
+
+    line-height: 1.9;
+}
+
+
+/* =========================================================
+   PROCEDURAL DEPTH
+========================================================= */
+
+.treatment-information-section {
+    margin-top: 27px;
+}
+
+
+.treatment-information-section h3,
+.treatment-objectives h3 {
+    margin: 0;
+
+    color: var(--td-dark-green);
+
+    font-size: 23px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.small-heading-decoration {
+    display: flex;
+
+    gap: 4px;
+
+    margin: 8px 0 13px;
+}
+
+
+.small-heading-decoration span {
+    width: 13px;
+    height: 2px;
+
+    background: var(--td-olive);
+
+    border-radius: 10px;
+}
+
+
+.small-heading-decoration span:last-child {
+    width: 6px;
+
+    opacity: 0.55;
+}
+
+
+.treatment-information-section p {
+    margin: 0;
+
+    color: var(--td-body);
+
+    font-size: 16px;
+
+    line-height: 1.85;
+}
+
+
+/* =========================================================
+   CLINICAL OBJECTIVES
+========================================================= */
+
+.treatment-objectives {
+    margin-top: 28px;
+}
+
+
+.treatment-objectives ul {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 11px 22px;
+
+    margin: 16px 0 0;
+
+    padding: 0;
+
+    list-style: none;
+}
+
+
+.treatment-objectives li {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 10px;
+
+    color: var(--td-body);
+
+    font-size: 15px;
+
+    line-height: 1.55;
+}
+
+
+.objective-check {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 19px;
+
+    width: 19px;
+    height: 19px;
+
+    margin-top: 1px;
+
+    border-radius: 50%;
+
+    background: var(--td-olive);
+
+    color: #ffffff;
+
+    font-size: 9px;
+}
+
+
+/* =========================================================
+   LARGE CONSULTATION CARD
+========================================================= */
+
+.treatment-consultation-card {
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 20px;
+
+    margin-top: 38px;
+
+    padding: 30px;
+
+    border: 1px solid #d9ddcf;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f8f8f3 0%,
+            #f1f3e8 100%
+        );
+
+    box-shadow:
+        0 8px 25px rgba(23,60,43,0.06);
+}
+
+
+.consultation-card-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 58px;
+
+    width: 58px;
+    height: 58px;
+
+    border-radius: 50%;
+
+    background: var(--td-olive);
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+
+.consultation-card-content {
+    flex: 1;
+
+    min-width: 0;
+}
+
+
+.consultation-small-title {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--td-olive);
+
+    font-size: 10px;
+
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+}
+
+
+.consultation-card-content h3 {
+    margin: 0 0 8px;
+
+    color: var(--td-dark-green);
+
+    font-size: 26px;
+
+    font-weight: 700;
+
+    line-height: 1.3;
+}
+
+
+.consultation-card-content p {
+    max-width: 650px;
+
+    margin: 0;
+
+    color: #647069;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+}
+
+
+/* =========================================================
+   CONSULTATION BUTTONS
+========================================================= */
+
+.consultation-buttons {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 12px;
+
+    margin-top: 20px;
+}
+
+
+.consultation-book-button,
+.consultation-whatsapp-button {
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    min-height: 46px;
+
+    padding: 0 21px;
+
+    border-radius: 25px;
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        border-color 0.25s ease,
+        transform 0.25s ease,
+        box-shadow 0.25s ease;
+}
+
+
+.consultation-book-button {
+    border: 1px solid var(--td-olive);
+
+    background: var(--td-olive);
+
+    color: #ffffff;
+}
+
+
+.consultation-book-button:hover {
+    background: var(--td-dark-green);
+
+    border-color: var(--td-dark-green);
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 8px 20px rgba(23,60,43,0.15);
+}
+
+
+.consultation-whatsapp-button {
+    border: 1px solid var(--td-olive);
+
+    background: #ffffff;
+
+    color: var(--td-olive-dark);
+}
+
+
+.consultation-whatsapp-button:hover {
+    background: var(--td-olive);
+
+    color: #ffffff;
+
+    transform: translateY(-2px);
+}
+
+
+/* =========================================================
+   RIGHT SIDEBAR
+========================================================= */
+
+.treatment-sidebar {
+    display: flex;
+
+    flex-direction: column;
+
+    gap: 24px;
+}
+
+
+/* =========================================================
+   CLINICAL MODULES
+========================================================= */
+
+.clinical-modules-card {
+    overflow: hidden;
+
+    border: 1px solid #dce0d4;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 25px rgba(23,60,43,0.08);
+}
+
+
+.clinical-modules-heading {
+    padding: 17px 15px;
+
+    background:
+        linear-gradient(
+            90deg,
+            var(--td-dark-green),
+            var(--td-olive)
+        );
+
+    color: #ffffff;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    font-weight: 700;
+}
+
+
+.clinical-module-list {
+    padding: 0;
+}
+
+
+.clinical-module-item {
+    position: relative;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    min-height: 44px;
+
+    padding: 10px 14px;
+
+    border-bottom:
+        1px solid #e2e5dc;
+
+    background: #ffffff;
+
+    color: #31473d;
+
+    text-decoration: none;
+
+    font-size: 13.5px;
+
+    font-weight: 500;
+
+    line-height: 1.35;
+
+    transition:
+        background 0.25s ease,
+        color 0.25s ease,
+        padding 0.25s ease;
+}
+
+
+.clinical-module-item:last-child {
+    border-bottom: 0;
+}
+
+
+.module-arrow {
+    color: var(--td-olive);
+
+    font-size: 9px;
+
+    transition: transform 0.25s ease;
+}
+
+
+.clinical-module-item:hover {
+    padding-left: 18px;
+
+    background: #f5f6ef;
+
+    color: var(--td-dark-green);
+}
+
+
+.clinical-module-item:hover .module-arrow {
+    transform: translateX(3px);
+}
+
+
+/* =========================================================
+   ACTIVE CLINICAL MODULE
+========================================================= */
+
+.clinical-module-item.active {
+    background:
+        linear-gradient(
+            90deg,
+            var(--td-dark-green),
+            var(--td-olive)
+        );
+
+    color: #ffffff;
+
+    font-weight: 700;
+}
+
+
+.clinical-module-item.active .module-arrow {
+    color: #ffffff;
+}
+
+
+.clinical-module-item.active::after {
+    content: "";
+
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    bottom: 0;
+
+    width: 4px;
+
+    background: #b4a75d;
+}
+
+
+/* =========================================================
+   DOCTOR CARD
+========================================================= */
+
+.treatment-doctor-card {
+    position: relative;
+
+    width: 100%;
+    min-height: 410px;
+
+    overflow: hidden;
+
+    border-radius: 12px;
+
+    background: var(--td-dark-green);
+
+    box-shadow: var(--td-shadow);
+}
+
+
+.doctor-card-image {
+    position: absolute;
+
+    inset: 0;
+}
+
+
+.doctor-card-image img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    object-position: center top;
+}
+
+
+.doctor-card-image::after {
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(23,60,43,0.02) 20%,
+            rgba(23,60,43,0.25) 52%,
+            rgba(23,60,43,0.96) 100%
+        );
+}
+
+
+.doctor-card-overlay {
+    position: absolute;
+
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    z-index: 2;
+
+    padding: 25px 20px 20px;
+
+    color: #ffffff;
+}
+
+
+.doctor-card-overlay > span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: #ddd6a1;
+
+    font-size: 10px;
+
+    font-weight: 700;
+
+    letter-spacing: 1.2px;
+}
+
+
+.doctor-card-overlay h3 {
+    margin: 0 0 4px;
+
+    color: #ffffff;
+
+    font-size: 21px;
+}
+
+
+.doctor-card-overlay p {
+    margin: 0 0 16px;
+
+    color: rgba(255,255,255,0.84);
+
+    font-size: 13px;
+}
+
+
+/* =========================================================
+   DIRECT LINE
+========================================================= */
+
+.doctor-direct-line {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    padding: 11px 12px;
+
+    border-radius: 9px;
+
+    background: #ffffff;
+}
+
+
+.doctor-call-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 36px;
+
+    width: 36px;
+    height: 36px;
+
+    border-radius: 50%;
+
+    background: var(--td-olive);
+
+    color: #ffffff;
+}
+
+
+.doctor-direct-line small {
+    display: block;
+
+    margin-bottom: 2px;
+
+    color: #7b857a;
+
+    font-size: 9px;
+}
+
+
+.doctor-direct-line a {
+    color: var(--td-dark-green);
+
+    text-decoration: none;
+
+    font-size: 13px;
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+     .treatment-detail-hero {
+        margin-top: 76px;
+    }
+
+
+    .treatment-breadcrumb-section .container {
+        justify-content: center;
+    }
+
+
+    .treatment-breadcrumb {
+        justify-content: center;
+        text-align: center;
+    }
+
+
+    .treatment-detail-layout {
+        grid-template-columns:
+            minmax(0, 1fr)
+            265px;
+
+        gap: 22px;
+    }
+
+
+    .treatment-main-image {
+        height: 340px;
+    }
+
+
+    .treatment-main-title {
+        font-size: 31px;
+    }
+
+
+    .treatment-introduction {
+        font-size: 16px;
+    }
+
+
+    .treatment-information-section p {
+        font-size: 15px;
+    }
+
+
+    .treatment-objectives ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .treatment-consultation-card {
+        padding: 24px;
+        gap: 16px;
+    }
+
+
+    .clinical-module-item {
+        padding: 9px 11px;
+        font-size: 12px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    /* -------------------------
+       BREADCRUMB
+    ------------------------- */
+
+    .treatment-breadcrumb-section {
+        width: 100%;
+
+        margin: 0 !important;
+
+        padding: 14px 16px;
+
+        clear: both;
+    }
+
+
+    .treatment-breadcrumb-section .container {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+
+        margin: 0 auto;
+        padding: 0;
+
+        text-align: center;
+    }
+
+
+    .treatment-breadcrumb {
+        display: flex;
+
+        align-items: center;
+        justify-content: center;
+
+        width: 100%;
+
+        gap: 7px;
+
+        margin: 0 auto;
+        padding: 0;
+
+        text-align: center;
+
+        font-size: 12px;
+
+        line-height: 1.6;
+    }
+
+
+    .treatment-breadcrumb i {
+        font-size: 8px;
+    }
+
+
+    /* -------------------------
+       HERO
+    ------------------------- */
+
+    .treatment-detail-hero {
+        margin-top: 82px;
+
+        padding: 25px 15px 30px;
+    }
+
+
+    .treatment-hero-breadcrumb {
+        gap: 6px;
+
+        margin-bottom: 10px;
+
+        font-size: 12px;
+    }
+
+
+    .treatment-hero-breadcrumb i {
+        font-size: 7px;
+    }
+
+
+    .treatment-detail-hero h1 {
+        font-size: 34px;
+
+        line-height: 1.12;
+    }
+
+
+    .treatment-detail-hero > .container > p {
+        margin-top: 10px;
+
+        font-size: 14px;
+
+        line-height: 1.6;
+    }
+
+    /* -------------------------
+       MAIN PAGE
+    ------------------------- */
+
+    .treatment-detail-page {
+        padding: 32px 15px 55px;
+    }
+
+
+    .treatment-detail-layout {
+        display: flex;
+
+        flex-direction: column;
+
+        gap: 35px;
+    }
+
+
+    .treatment-main-content,
+    .treatment-sidebar {
+        width: 100%;
+    }
+
+
+    .treatment-main-image {
+        height: 270px;
+    }
+
+
+    .treatment-main-title {
+        margin-top: 23px;
+
+        font-size: 28px;
+    }
+
+
+    .treatment-introduction {
+        font-size: 15px;
+
+        line-height: 1.8;
+    }
+
+
+    .treatment-information-section h3,
+    .treatment-objectives h3 {
+        font-size: 21px;
+    }
+
+
+    .treatment-information-section p {
+        font-size: 15px;
+    }
+
+
+    .treatment-objectives ul {
+        grid-template-columns: 1fr;
+    }
+
+
+    .treatment-objectives li {
+        font-size: 14px;
+    }
+
+
+    /* -------------------------
+       CONSULTATION
+    ------------------------- */
+
+    .treatment-consultation-card {
+        flex-direction: column;
+
+        padding: 24px 20px;
+    }
+
+
+    .consultation-card-content h3 {
+        font-size: 23px;
+    }
+
+
+    .consultation-card-content p {
+        font-size: 14px;
+    }
+
+
+    .consultation-buttons {
+        width: 100%;
+    }
+
+
+    /* -------------------------
+       SIDEBAR
+    ------------------------- */
+
+    .treatment-sidebar {
+        gap: 22px;
+    }
+
+
+    .clinical-module-item {
+        min-height: 45px;
+
+        padding: 10px 14px;
+
+        font-size: 13px;
+    }
+
+
+    .treatment-doctor-card {
+        min-height: 440px;
+    }
+
+}
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .treatment-breadcrumb-section {
+        padding: 12px 12px;
+    }
+
+
+    .treatment-breadcrumb {
+        justify-content: center;
+
+        gap: 6px;
+
+        font-size: 11px;
+
+        text-align: center;
+    }
+
+
+    .treatment-detail-hero {
+        padding: 26px 15px 29px;
+    }
+
+
+    .treatment-detail-hero h1 {
+        font-size: 28px;
+    }
+
+
+    .treatment-detail-hero p {
+        font-size: 13.5px;
+
+        line-height: 1.65;
+    }
+
+
+    .treatment-main-image {
+        height: 225px;
+    }
+
+
+    .treatment-main-title {
+        font-size: 25px;
+    }
+
+
+    .consultation-buttons {
+        flex-direction: column;
+    }
+
+
+    .consultation-book-button,
+    .consultation-whatsapp-button {
+        width: 100%;
+    }
+
+
+    .treatment-doctor-card {
+        min-height: 390px;
+    }
+
+}

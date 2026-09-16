@@ -1,0 +1,2089 @@
+
+
+:root {
+
+    --about-green: #747b3f;
+    --about-green-dark: #575d31;
+    --about-deep: #173c2b;
+    --about-heading: #172238;
+    --about-gold: #b99742;
+    --about-light: #f7f8f3;
+    --about-soft: #eef0e3;
+    --about-border: #e1e5da;
+    --about-text: #5f6b65;
+
+}
+
+
+/* =========================================================
+   ABOUT PAGE BASE TEXT
+
+   Normal content minimum = 14px
+========================================================= */
+
+.about-section,
+.about-education-section,
+.about-expertise-section,
+.about-consultation-section {
+
+    font-size: 15px;
+
+}
+
+
+
+/* =========================================================
+   BANNER
+========================================================= */
+
+.about-page-banner {
+
+    position: relative;
+
+    margin-top: 92px;
+
+    padding:
+        50px 20px
+        54px;
+
+    overflow: hidden;
+
+    background:
+        linear-gradient(
+            115deg,
+            #4f552d 0%,
+            #6d743c 55%,
+            #8a7b3f 100%
+        );
+
+    color: #ffffff;
+
+}
+
+.about-page-banner::before {
+
+    width: 280px;
+    height: 280px;
+
+    top: -170px;
+    left: -80px;
+
+}
+
+
+.about-page-banner::after {
+
+    width: 240px;
+    height: 240px;
+
+    right: -70px;
+    bottom: -150px;
+
+}
+
+
+.about-banner-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    text-align: center;
+
+}
+
+
+/* =========================================================
+   BREADCRUMB
+========================================================= */
+
+.about-page-breadcrumb {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+
+    margin-bottom: 14px;
+
+    font-size: 14px;
+    font-weight: 600;
+
+}
+
+
+.about-page-breadcrumb a {
+
+    color:
+        rgba(255, 255, 255, .92);
+
+    text-decoration: none;
+
+    transition:
+        color .25s ease;
+
+}
+
+
+.about-page-breadcrumb a:hover {
+
+    color: #f1d983;
+
+}
+
+
+.about-page-breadcrumb i {
+
+    color:
+        rgba(255, 255, 255, .55);
+
+    font-size: 9px;
+
+}
+
+
+.about-page-breadcrumb span {
+
+    color: #f1d983;
+
+}
+
+
+/* =========================================================
+   BANNER HEADING
+========================================================= */
+
+.about-page-banner h1 {
+
+    margin: 0;
+
+    color: #ffffff;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(42px, 5vw, 58px);
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+}
+
+
+.about-page-banner p {
+
+    max-width: 720px;
+
+    margin:
+        15px auto 0;
+
+    color:
+        rgba(255, 255, 255, .88);
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+}
+
+
+
+/* =========================================================
+   ABOUT MAIN SECTION
+========================================================= */
+
+.about-section {
+
+    padding:
+        85px 20px
+        90px;
+
+    background:
+        #f8faf8;
+
+}
+
+
+.about-main-shell {
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.about-container {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, .92fr)
+        minmax(0, 1.08fr);
+
+    align-items: center;
+
+    gap: 62px;
+
+}
+
+
+
+/* =========================================================
+   IMAGE COLUMN
+========================================================= */
+
+.about-image-column {
+
+    position: relative;
+
+    width: 100%;
+
+    max-width: 500px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.about-image-wrapper {
+
+    position: relative;
+
+    padding: 12px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        rgba(154, 135, 62, .30);
+
+    border-radius: 27px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 18px 45px
+        rgba(23, 60, 43, .09);
+
+}
+
+
+.about-image {
+
+    display: block;
+
+    width: 100%;
+    height: 540px;
+
+    object-fit: contain;
+
+    object-position:
+        center bottom;
+
+    border-radius: 20px;
+
+    background: #ffffff;
+
+}
+
+
+
+/* =========================================================
+   EXPERIENCE BADGE
+========================================================= */
+
+.experience-badge {
+
+    position: absolute;
+
+    right: 25px;
+    bottom: 25px;
+    left: 25px;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 14px;
+
+    padding:
+        17px 19px;
+
+    border:
+        1px solid
+        rgba(225, 229, 218, .8);
+
+    border-radius: 13px;
+
+    background:
+        rgba(255, 255, 255, .96);
+
+    box-shadow:
+        0 11px 28px
+        rgba(23, 60, 43, .13);
+
+    backdrop-filter:
+        blur(8px);
+
+}
+
+
+.experience-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex:
+        0 0 46px;
+
+    width: 46px;
+    height: 46px;
+
+    border-radius: 11px;
+
+    background: #f4eed3;
+
+    color:
+        var(--about-gold);
+
+    font-size: 19px;
+
+}
+
+
+.experience-label {
+
+    display: block;
+
+    margin-bottom: 4px;
+
+    color:
+        var(--about-green);
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 1px;
+
+    text-transform: uppercase;
+
+}
+
+
+.experience-badge strong {
+
+    display: block;
+
+    color:
+        var(--about-deep);
+
+    font-size: 15px;
+
+    line-height: 1.4;
+
+}
+
+
+
+/* =========================================================
+   ABOUT RIGHT CONTENT
+========================================================= */
+
+.about-content {
+
+    min-width: 0;
+
+}
+
+
+.about-content .section-label {
+
+    margin-bottom: 11px;
+
+    color:
+        var(--about-green);
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+}
+
+
+.about-content h2 {
+
+    margin:
+        0 0 24px;
+
+    color:
+        var(--about-heading);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(42px, 4vw, 54px);
+
+    font-weight: 600;
+
+    line-height: 1.1;
+
+}
+
+
+.about-content h2 span {
+
+    display: block;
+
+    color:
+        var(--about-green);
+
+}
+
+
+.about-content p {
+
+    margin:
+        0 0 18px;
+
+    color: #55645d;
+
+    font-family:
+        "Open Sans",
+        sans-serif;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+.about-content p:last-child {
+
+    margin-bottom: 0;
+
+}
+
+
+.about-content strong,
+.about-detail-content strong,
+.doctor-quote strong {
+
+    color: #26372f;
+
+    font-weight: 700;
+
+}
+
+
+
+/* =========================================================
+   COMPREHENSIVE CARE + EXPERIENCE
+========================================================= */
+
+.about-care-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    align-items: stretch;
+
+    gap: 22px;
+
+    margin-top: 48px;
+
+}
+
+
+.about-detail-card {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 17px;
+
+    min-width: 0;
+
+    height: 100%;
+
+    padding:
+        25px 24px;
+
+    border:
+        1px solid
+        var(--about-border);
+
+    border-radius: 17px;
+
+    background:
+        #ffffff;
+
+    box-shadow:
+        0 7px 22px
+        rgba(23, 60, 43, .045);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+.about-detail-card:hover {
+
+    transform:
+        translateY(-4px);
+
+    border-color:
+        rgba(116, 123, 63, .38);
+
+    box-shadow:
+        0 14px 32px
+        rgba(23, 60, 43, .085);
+
+}
+
+
+.about-detail-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex:
+        0 0 50px;
+
+    width: 50px;
+    height: 50px;
+
+    border-radius: 12px;
+
+    background:
+        var(--about-soft);
+
+    color:
+        var(--about-green);
+
+    font-size: 20px;
+
+}
+
+
+.about-detail-content {
+
+    min-width: 0;
+
+}
+
+
+.about-detail-content h3 {
+
+    margin:
+        1px 0 9px;
+
+    color:
+        var(--about-deep);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.35;
+
+}
+
+
+.about-detail-content p {
+
+    margin: 0;
+
+    color: #65716b;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+}
+
+
+
+/* =========================================================
+   CENTER QUOTE
+========================================================= */
+
+.about-quote-wrapper {
+
+    display: flex;
+
+    justify-content: center;
+
+    width: 100%;
+
+    margin-top: 27px;
+
+}
+
+
+.doctor-quote {
+
+    position: relative;
+
+    width: 100%;
+    max-width: 720px;
+
+    margin: 0;
+
+    padding:
+        26px 32px;
+
+    border:
+        1px solid
+        var(--about-border);
+
+    border-top:
+        3px solid
+        var(--about-green);
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    color: #626f68;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 17px;
+    font-style: italic;
+
+    line-height: 1.8;
+
+    text-align: center;
+
+    box-shadow:
+        0 8px 25px
+        rgba(23, 60, 43, .055);
+
+}
+
+
+
+/* =========================================================
+   CONSULTATION BUTTON
+========================================================= */
+
+.about-consultation-button {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    margin-top: 27px;
+
+}
+
+
+.about-consultation-button .btn {
+
+    min-height: 50px;
+
+    padding:
+        0 24px;
+
+    font-size: 15px;
+
+}
+
+
+
+/* =========================================================
+   COMMON SECTION HEADING
+========================================================= */
+
+.about-section-heading {
+
+    width: 100%;
+
+    max-width: 800px;
+
+    margin:
+        0 auto 44px;
+
+    text-align: center;
+
+}
+
+
+.about-eyebrow {
+
+    display: block;
+
+    margin-bottom: 10px;
+
+    color:
+        var(--about-green);
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 1.5px;
+
+    text-transform: uppercase;
+
+}
+
+
+.about-section-heading h2 {
+
+    margin: 0;
+
+    color:
+        var(--about-heading);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(38px, 4vw, 48px);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+
+}
+
+
+.about-section-heading h2 span {
+
+    color:
+        var(--about-green);
+
+}
+
+
+.about-section-heading p {
+
+    max-width: 700px;
+
+    margin:
+        15px auto 0;
+
+    color: #69756e;
+
+    font-size: 16px;
+
+    line-height: 1.75;
+
+}
+
+
+
+/* =========================================================
+   EDUCATION
+========================================================= */
+
+.about-education-section {
+
+    padding:
+        85px 20px;
+
+    background:
+        #ffffff;
+
+}
+
+
+.education-grid {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            4,
+            minmax(0, 1fr)
+        );
+
+    gap: 20px;
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.education-card {
+
+    position: relative;
+
+    min-width: 0;
+    min-height: 280px;
+
+    padding:
+        29px 24px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        var(--about-border);
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 7px 22px
+        rgba(23, 60, 43, .05);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+
+}
+
+
+.education-card:hover {
+
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(116, 123, 63, .38);
+
+    box-shadow:
+        0 15px 34px
+        rgba(23, 60, 43, .09);
+
+}
+
+
+.education-card-number {
+
+    position: absolute;
+
+    top: 9px;
+    right: 15px;
+
+    color:
+        rgba(116, 123, 63, .08);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 62px;
+    font-weight: 700;
+
+    line-height: 1;
+
+}
+
+
+.education-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 20px;
+
+    border-radius: 12px;
+
+    background:
+        var(--about-soft);
+
+    color:
+        var(--about-green);
+
+    font-size: 20px;
+
+}
+
+
+.education-label {
+
+    display: block;
+
+    margin-bottom: 9px;
+
+    color:
+        var(--about-gold);
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 1.2px;
+
+    text-transform: uppercase;
+
+}
+
+
+.education-card h3 {
+
+    margin:
+        0 0 11px;
+
+    color:
+        var(--about-deep);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.35;
+
+}
+
+
+.education-card p {
+
+    margin: 0;
+
+    color: #69756e;
+
+    font-size: 15px;
+
+    line-height: 1.75;
+
+}
+
+
+
+/* =========================================================
+   EXPERTISE SECTION
+========================================================= */
+
+.about-expertise-section {
+
+    padding:
+        85px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f3f5ec 0%,
+            #fafbf8 100%
+        );
+
+}
+
+
+.about-expertise-layout {
+
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, .9fr)
+        minmax(0, 1.1fr);
+
+    align-items: center;
+
+    gap: 65px;
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin:
+        0 auto;
+
+}
+
+
+.expertise-intro h2 {
+
+    margin:
+        9px 0 21px;
+
+    color:
+        var(--about-heading);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size:
+        clamp(40px, 4vw, 50px);
+
+    font-weight: 600;
+
+    line-height: 1.15;
+
+}
+
+
+.expertise-intro h2 span {
+
+    display: block;
+
+    color:
+        var(--about-green);
+
+}
+
+
+.expertise-intro > p {
+
+    margin:
+        0 0 28px;
+
+    color: #66736c;
+
+    font-size: 16px;
+
+    line-height: 1.8;
+
+}
+
+
+.expertise-intro .btn {
+
+    min-height: 50px;
+
+    padding:
+        0 24px;
+
+    font-size: 15px;
+
+}
+
+
+
+/* =========================================================
+   EXPERTISE CARDS
+========================================================= */
+
+.expertise-list {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(
+            2,
+            minmax(0, 1fr)
+        );
+
+    gap: 16px;
+
+}
+
+
+.expertise-item {
+
+    display: flex;
+
+    align-items: flex-start;
+
+    gap: 14px;
+
+    min-width: 0;
+
+    padding: 21px;
+
+    border:
+        1px solid
+        var(--about-border);
+
+    border-radius: 15px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 6px 20px
+        rgba(23, 60, 43, .045);
+
+    transition:
+        transform .25s ease,
+        border-color .25s ease;
+
+}
+
+
+.expertise-item:hover {
+
+    transform:
+        translateY(-3px);
+
+    border-color:
+        rgba(116, 123, 63, .35);
+
+}
+
+
+.expertise-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex:
+        0 0 44px;
+
+    width: 44px;
+    height: 44px;
+
+    border-radius: 10px;
+
+    background:
+        var(--about-soft);
+
+    color:
+        var(--about-green);
+
+    font-size: 17px;
+
+}
+
+
+.expertise-item h3 {
+
+    margin:
+        0 0 7px;
+
+    color:
+        var(--about-deep);
+
+    font-size: 16px;
+    font-weight: 700;
+
+    line-height: 1.4;
+
+}
+
+
+.expertise-item p {
+
+    margin: 0;
+
+    color: #69756e;
+
+    font-size: 14px;
+
+    line-height: 1.7;
+
+}
+
+
+
+/* =========================================================
+   CONSULTATION CTA
+========================================================= */
+
+.about-consultation-section {
+
+    padding:
+        70px 20px;
+
+    background:
+        #ffffff;
+
+}
+
+
+.about-consultation-card {
+
+    display: grid;
+
+    grid-template-columns:
+        auto
+        minmax(0, 1fr)
+        auto;
+
+    align-items: center;
+
+    gap: 25px;
+
+    width: 100%;
+
+    max-width: 1180px;
+
+    margin:
+        0 auto;
+
+    padding:
+        34px 36px;
+
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            110deg,
+            #50572e,
+            #747b3f
+        );
+
+    color: #ffffff;
+
+    box-shadow:
+        0 15px 38px
+        rgba(23, 60, 43, .15);
+
+}
+
+
+.about-consultation-icon {
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 60px;
+    height: 60px;
+
+    border-radius: 15px;
+
+    background:
+        rgba(255, 255, 255, .12);
+
+    color: #f2d77e;
+
+    font-size: 24px;
+
+}
+
+
+.about-consultation-content > span {
+
+    display: block;
+
+    margin-bottom: 7px;
+
+    color: #f2d77e;
+
+    font-size: 14px;
+    font-weight: 800;
+
+    letter-spacing: 1.3px;
+
+}
+
+
+.about-consultation-content h2 {
+
+    margin:
+        0 0 7px;
+
+    color: #ffffff;
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 32px;
+    font-weight: 600;
+
+}
+
+
+.about-consultation-content p {
+
+    max-width: 650px;
+
+    margin: 0;
+
+    color:
+        rgba(255, 255, 255, .85);
+
+    font-size: 15px;
+
+    line-height: 1.7;
+
+}
+
+
+.about-consultation-actions {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+}
+
+
+.about-consultation-actions a {
+
+    display: inline-flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 9px;
+
+    min-height: 48px;
+
+    padding:
+        0 21px;
+
+    border-radius: 8px;
+
+    background: #ffffff;
+
+    color:
+        var(--about-deep);
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-decoration: none;
+
+    white-space: nowrap;
+
+    transition:
+        transform .25s ease,
+        box-shadow .25s ease;
+
+}
+
+
+.about-consultation-actions a:hover {
+
+    transform:
+        translateY(-2px);
+
+    box-shadow:
+        0 8px 18px
+        rgba(0, 0, 0, .12);
+
+}
+
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+@media (max-width: 991px) {
+
+    .about-page-banner {
+        margin-top: 76px;
+    }
+
+    /* existing code below */
+    .about-section,
+    .about-education-section,
+    .about-expertise-section {
+        padding: 70px 20px;
+    }
+
+    /* remaining existing code unchanged */
+}
+@media (max-width: 991px) {
+
+    .about-section,
+    .about-education-section,
+    .about-expertise-section {
+
+        padding:
+            70px 20px;
+
+    }
+
+
+    .about-container {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 48px;
+
+    }
+
+
+    .about-image-column {
+
+        max-width: 520px;
+
+    }
+
+
+    .about-content {
+
+        width: 100%;
+
+        max-width: 780px;
+
+        margin:
+            0 auto;
+
+    }
+
+
+    .about-care-grid {
+
+        gap: 18px;
+
+    }
+
+
+    .education-grid {
+
+        grid-template-columns:
+            repeat(
+                2,
+                minmax(0, 1fr)
+            );
+
+    }
+
+
+    .about-expertise-layout {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 44px;
+
+    }
+
+
+    .about-consultation-card {
+
+        grid-template-columns:
+            auto
+            minmax(0, 1fr);
+
+    }
+
+
+    .about-consultation-actions {
+
+        grid-column:
+            1 / -1;
+
+        padding-left: 85px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   MOBILE / SMALL TABLET
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .about-page-banner {
+
+        margin-top: 76px;
+
+        padding:
+            36px 15px
+            39px;
+
+    }
+
+
+    .about-page-banner h1 {
+
+        font-size: 37px;
+
+    }
+
+
+    .about-page-banner p {
+
+        max-width: 560px;
+
+        font-size: 15px;
+
+    }
+
+
+    .about-page-breadcrumb {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-section,
+    .about-education-section,
+    .about-expertise-section {
+
+        padding:
+            60px 15px;
+
+    }
+
+
+    .about-container {
+
+        gap: 40px;
+
+    }
+
+
+    .about-image {
+
+        height: 410px;
+
+    }
+
+
+    .experience-badge {
+
+        right: 17px;
+        bottom: 17px;
+        left: 17px;
+
+    }
+
+
+    .experience-label {
+
+        font-size: 14px;
+
+    }
+
+
+    .experience-badge strong {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-content .section-label {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-content h2 {
+
+        font-size: 37px;
+
+    }
+
+
+    .about-content p {
+
+        font-size: 15px;
+
+        line-height: 1.8;
+
+    }
+
+
+    /* =====================================================
+       CARE CARDS
+    ====================================================== */
+
+    .about-care-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 15px;
+
+        margin-top: 38px;
+
+    }
+
+
+    .about-detail-content h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .about-detail-content p {
+
+        font-size: 15px;
+
+    }
+
+
+    /* =====================================================
+       QUOTE
+    ====================================================== */
+
+    .about-quote-wrapper {
+
+        margin-top: 20px;
+
+    }
+
+
+    .doctor-quote {
+
+        max-width: 100%;
+
+        padding:
+            22px 20px;
+
+        font-size: 16px;
+
+        text-align: left;
+
+    }
+
+
+    /* =====================================================
+       SECTION HEADINGS
+    ====================================================== */
+
+    .about-eyebrow {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-section-heading h2 {
+
+        font-size: 35px;
+
+    }
+
+
+    .about-section-heading p {
+
+        font-size: 15px;
+
+    }
+
+
+    /* =====================================================
+       EDUCATION
+    ====================================================== */
+
+    .education-grid {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .education-card {
+
+        min-height: auto;
+
+        padding:
+            25px 22px;
+
+    }
+
+
+    .education-label {
+
+        font-size: 14px;
+
+    }
+
+
+    .education-card h3 {
+
+        font-size: 19px;
+
+    }
+
+
+    .education-card p {
+
+        font-size: 15px;
+
+    }
+
+
+    /* =====================================================
+       EXPERTISE
+    ====================================================== */
+
+    .expertise-list {
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .expertise-intro h2 {
+
+        font-size: 36px;
+
+    }
+
+
+    .expertise-intro > p {
+
+        font-size: 15px;
+
+    }
+
+
+    .expertise-item h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .expertise-item p {
+
+        font-size: 14px;
+
+    }
+
+
+    /* =====================================================
+       CONSULTATION CTA
+    ====================================================== */
+
+    .about-consultation-section {
+
+        padding:
+            58px 15px;
+
+    }
+
+
+    .about-consultation-card {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 19px;
+
+        padding:
+            29px 23px;
+
+        text-align: center;
+
+    }
+
+
+    .about-consultation-icon {
+
+        margin:
+            0 auto;
+
+    }
+
+
+    .about-consultation-content > span {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-consultation-content h2 {
+
+        font-size: 29px;
+
+    }
+
+
+    .about-consultation-content p {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-consultation-actions {
+
+        grid-column: auto;
+
+        justify-content: center;
+
+        padding-left: 0;
+
+    }
+
+
+    .about-consultation-actions a {
+
+        font-size: 14px;
+
+    }
+
+}
+
+
+
+/* =========================================================
+   SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .about-page-banner h1 {
+
+        font-size: 33px;
+
+    }
+
+
+    .about-page-banner p {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-image {
+
+        height: 350px;
+
+    }
+
+
+    .experience-badge {
+
+        position: relative;
+
+        right: auto;
+        bottom: auto;
+        left: auto;
+
+        z-index: 3;
+
+        margin:
+            -20px 15px 0;
+
+    }
+
+
+    .experience-icon {
+
+        flex-basis: 44px;
+
+        width: 44px;
+        height: 44px;
+
+    }
+
+
+    .experience-label {
+
+        font-size: 14px;
+
+    }
+
+
+    .experience-badge strong {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-content .section-label {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-content h2 {
+
+        font-size: 33px;
+
+    }
+
+
+    .about-content p {
+
+        font-size: 15px;
+
+    }
+
+
+    .about-detail-card {
+
+        gap: 14px;
+
+        padding:
+            20px 17px;
+
+    }
+
+
+    .about-detail-icon {
+
+        flex-basis: 44px;
+
+        width: 44px;
+        height: 44px;
+
+        font-size: 18px;
+
+    }
+
+
+    .about-detail-content h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .about-detail-content p {
+
+        font-size: 14px;
+
+    }
+
+
+    .doctor-quote {
+
+        padding:
+            21px 18px;
+
+        font-size: 15px;
+
+    }
+
+
+    .about-section-heading h2 {
+
+        font-size: 32px;
+
+    }
+
+
+    .about-section-heading p {
+
+        font-size: 14px;
+
+    }
+
+
+    .education-label {
+
+        font-size: 14px;
+
+    }
+
+
+    .education-card h3 {
+
+        font-size: 18px;
+
+    }
+
+
+    .education-card p {
+
+        font-size: 14px;
+
+    }
+
+
+    .expertise-intro h2 {
+
+        font-size: 33px;
+
+    }
+
+
+    .expertise-intro > p {
+
+        font-size: 15px;
+
+    }
+
+
+    .expertise-item h3 {
+
+        font-size: 16px;
+
+    }
+
+
+    .expertise-item p {
+
+        font-size: 14px;
+
+    }
+
+
+    .about-consultation-actions {
+
+        flex-direction:
+            column;
+
+    }
+
+
+    .about-consultation-actions a {
+
+        width: 100%;
+
+        font-size: 14px;
+
+    }
+
+}

@@ -1,0 +1,648 @@
+/* =========================================================
+   SHARED FAQ + TESTIMONIALS
+========================================================= */
+
+:root {
+    --shared-green: #747b3f;
+    --shared-dark-green: #173c2b;
+    --shared-heading: #172238;
+    --shared-gold: #b99742;
+    --shared-soft: #f1f2e7;
+    --shared-bg: #f8faf8;
+    --shared-border: #e0e5dc;
+    --shared-text: #66726c;
+}
+
+
+/* =========================================================
+   COMMON HEADING
+========================================================= */
+
+.shared-section-heading {
+    width: 100%;
+    max-width: 760px;
+
+    margin: 0 auto 44px;
+
+    text-align: center;
+}
+
+.shared-eyebrow {
+    display: block;
+
+    margin-bottom: 9px;
+
+    color: var(--shared-green);
+
+    font-size: 11px;
+    font-weight: 800;
+
+    letter-spacing: 1.7px;
+
+    text-transform: uppercase;
+}
+
+.shared-section-heading h2 {
+    margin: 0;
+
+    color: var(--shared-heading);
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-size:
+        clamp(36px, 4vw, 48px);
+
+    line-height: 1.15;
+}
+
+.shared-section-heading h2 span {
+    color: var(--shared-green);
+}
+
+.shared-section-heading p {
+    max-width: 680px;
+
+    margin: 13px auto 0;
+
+    color: var(--shared-text);
+
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* =========================================================
+   TESTIMONIALS
+========================================================= */
+
+.shared-testimonials {
+    padding: 82px 20px 88px;
+
+    overflow: hidden;
+
+    background: #ffffff;
+}
+
+.shared-testimonial-slider {
+    position: relative;
+
+    width: 100%;
+    max-width: 1120px;
+
+    margin: 0 auto;
+}
+
+
+/* IMPORTANT - NO SCROLL BAR */
+
+.shared-testimonial-viewport {
+    width: 100%;
+
+    overflow: hidden;
+
+    padding: 4px;
+}
+
+.shared-testimonial-track {
+    display: flex;
+
+    gap: 22px;
+
+    width: 100%;
+
+    overflow: visible;
+
+    transition:
+        transform .45s
+        cubic-bezier(.4, 0, .2, 1);
+}
+
+
+/* CARD */
+
+.shared-testimonial-card {
+    position: relative;
+
+    min-width: 0;
+    min-height: 255px;
+
+    padding: 27px 25px;
+
+    border:
+        1px solid
+        var(--shared-border);
+
+    border-radius: 18px;
+
+    background:
+        linear-gradient(
+            145deg,
+            #ffffff,
+            #fbfcf9
+        );
+
+    box-shadow:
+        0 9px 25px
+        rgba(23, 60, 43, .065);
+}
+
+
+/* QUOTE DECORATION */
+
+.shared-testimonial-card::after {
+    content: "“";
+
+    position: absolute;
+
+    top: 7px;
+    right: 20px;
+
+    color:
+        rgba(116, 123, 63, .10);
+
+    font-family: Georgia, serif;
+
+    font-size: 72px;
+
+    line-height: 1;
+}
+
+
+/* USER */
+
+.shared-testimonial-top {
+    position: relative;
+
+    z-index: 2;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    margin-bottom: 22px;
+}
+
+.shared-testimonial-avatar {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 48px;
+
+    width: 48px;
+    height: 48px;
+
+    border:
+        2px solid
+        var(--shared-green);
+
+    border-radius: 50%;
+
+    background:
+        var(--shared-soft);
+
+    color:
+        var(--shared-dark-green);
+
+    font-size: 15px;
+    font-weight: 800;
+}
+
+.shared-testimonial-user strong {
+    display: block;
+
+    color:
+        var(--shared-dark-green);
+
+    font-size: 14px;
+    font-weight: 800;
+}
+
+.shared-testimonial-user span {
+    display: block;
+
+    margin-top: 4px;
+
+    color:
+        var(--shared-green);
+
+    font-size: 12px;
+}
+
+
+/* REVIEW */
+
+.shared-testimonial-card blockquote {
+    margin: 0 0 22px;
+
+    color: #59665f;
+
+    font-size: 13.5px;
+    font-style: italic;
+
+    line-height: 1.75;
+}
+
+.shared-testimonial-rating {
+    margin-top: auto;
+
+    color: #e8a316;
+
+    font-size: 15px;
+
+    letter-spacing: 1px;
+}
+
+.shared-testimonial-rating span {
+    margin-right: 7px;
+
+    color:
+        var(--shared-dark-green);
+
+    font-size: 11px;
+
+    letter-spacing: 0;
+}
+
+
+/* =========================================================
+   ARROWS
+========================================================= */
+
+.shared-testimonial-arrow {
+    position: absolute;
+
+    top: 54%;
+
+    z-index: 20;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+
+    padding: 0;
+
+    border:
+        1px solid
+        #d8ded4;
+
+    border-radius: 50%;
+
+    background: #ffffff;
+
+    color:
+        var(--shared-green);
+
+    cursor: pointer;
+
+    transform:
+        translateY(-50%);
+
+    box-shadow:
+        0 7px 20px
+        rgba(23, 60, 43, .10);
+
+    transition:
+        background .25s ease,
+        color .25s ease,
+        border-color .25s ease,
+        transform .25s ease;
+}
+
+.shared-testimonial-arrow:hover {
+    border-color:
+        var(--shared-green);
+
+    background:
+        var(--shared-green);
+
+    color: #ffffff;
+}
+
+.shared-testimonial-prev {
+    left: -65px;
+}
+
+.shared-testimonial-next {
+    right: -65px;
+}
+
+
+/* =========================================================
+   DOTS
+========================================================= */
+
+.shared-testimonial-dots {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    gap: 7px;
+
+    margin-top: 28px;
+}
+
+.shared-testimonial-dot {
+    width: 8px;
+    height: 8px;
+
+    padding: 0;
+
+    border: 0;
+
+    border-radius: 999px;
+
+    background:
+        #d8ddcf;
+
+    cursor: pointer;
+
+    transition:
+        width .25s ease,
+        background .25s ease;
+}
+
+.shared-testimonial-dot.active {
+    width: 28px;
+
+    background:
+        var(--shared-green);
+}
+
+
+/* =========================================================
+   FAQ
+========================================================= */
+
+.shared-faq {
+    padding: 82px 20px 90px;
+
+    background:
+        var(--shared-bg);
+}
+
+.shared-faq-container {
+    width: 100%;
+
+    max-width: 900px;
+
+    margin: 0 auto;
+}
+
+.shared-faq-list {
+    display: grid;
+
+    gap: 13px;
+}
+
+.shared-faq-item {
+    overflow: hidden;
+
+    border:
+        1px solid
+        var(--shared-border);
+
+    border-radius: 14px;
+
+    background: #ffffff;
+
+    transition:
+        border-color .25s ease,
+        box-shadow .25s ease;
+}
+
+.shared-faq-item.active {
+    border-color:
+        rgba(116, 123, 63, .48);
+
+    box-shadow:
+        0 8px 24px
+        rgba(23, 60, 43, .07);
+}
+
+
+/* QUESTION */
+
+.shared-faq-question {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    width: 100%;
+
+    padding: 20px 22px;
+
+    border: 0;
+
+    background: transparent;
+
+    color:
+        var(--shared-dark-green);
+
+    font-family: inherit;
+
+    font-size: 14px;
+    font-weight: 700;
+
+    text-align: left;
+
+    cursor: pointer;
+}
+
+
+/* PLUS / MINUS */
+
+.shared-faq-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 34px;
+
+    width: 34px;
+    height: 34px;
+
+    border-radius: 50%;
+
+    background:
+        var(--shared-soft);
+
+    color:
+        var(--shared-green);
+
+    font-size: 20px;
+
+    transition:
+        background .25s ease,
+        color .25s ease;
+}
+
+.shared-faq-item.active
+.shared-faq-icon {
+    background:
+        var(--shared-green);
+
+    color: #ffffff;
+}
+
+
+/* ANSWER */
+
+.shared-faq-answer {
+    display: grid;
+
+    grid-template-rows: 0fr;
+
+    padding:
+        0 22px;
+
+    opacity: 0;
+
+    transition:
+        grid-template-rows .3s ease,
+        opacity .3s ease,
+        padding .3s ease;
+}
+
+.shared-faq-answer > p {
+    overflow: hidden;
+
+    margin: 0;
+
+    color:
+        var(--shared-text);
+
+    font-size: 13.5px;
+
+    line-height: 1.75;
+}
+
+.shared-faq-item.active
+.shared-faq-answer {
+    grid-template-rows: 1fr;
+
+    padding:
+        0 22px 21px;
+
+    opacity: 1;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 1200px) {
+
+    .shared-testimonial-slider {
+        max-width:
+            calc(100% - 90px);
+    }
+
+    .shared-testimonial-prev {
+        left: -52px;
+    }
+
+    .shared-testimonial-next {
+        right: -52px;
+    }
+
+}
+
+
+@media (max-width: 991px) {
+
+    .shared-testimonials,
+    .shared-faq {
+        padding:
+            65px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 640px) {
+
+    .shared-testimonials,
+    .shared-faq {
+        padding:
+            55px 15px;
+    }
+
+    .shared-section-heading {
+        margin-bottom: 32px;
+    }
+
+    .shared-section-heading h2 {
+        font-size: 32px;
+    }
+
+    .shared-section-heading p {
+        font-size: 13px;
+    }
+
+    .shared-testimonial-slider {
+        max-width: 100%;
+    }
+
+    .shared-testimonial-viewport {
+        padding:
+            3px 1px;
+    }
+
+    .shared-testimonial-card {
+        min-height: 240px;
+
+        padding:
+            23px 20px;
+    }
+
+    .shared-testimonial-prev {
+        left: -5px;
+    }
+
+    .shared-testimonial-next {
+        right: -5px;
+    }
+
+    .shared-testimonial-arrow {
+        top: 50%;
+
+        width: 38px;
+        height: 38px;
+    }
+
+    .shared-faq-question {
+        padding:
+            18px 17px;
+
+        font-size: 13px;
+    }
+
+    .shared-faq-answer,
+    .shared-faq-item.active
+    .shared-faq-answer {
+        padding-left: 17px;
+        padding-right: 17px;
+    }
+
+}

@@ -1,0 +1,200 @@
+body {
+  overflow-x: hidden;
+}
+.treatment-banner {
+  margin-top: 92px;
+  padding: 44px 20px 48px;
+  background: linear-gradient(110deg, #575a32 0%, #6b6f3d 55%, #8a7b3f 100%);
+  color: #fff;
+}
+.treatment-banner-inner {
+  text-align: center;
+}
+.treatment-breadcrumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 14px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.treatment-breadcrumb a {
+  color: #fff;
+}
+.treatment-breadcrumb a:hover,
+.treatment-breadcrumb span {
+  color: #f3d77e;
+}
+.treatment-breadcrumb i {
+  font-size: 9px;
+  color: rgba(255, 255, 255, 0.7);
+}
+.treatment-banner h1 {
+  margin: 0 0 10px;
+  color: #fff;
+  font-size: clamp(38px, 4vw, 54px);
+  line-height: 1.1;
+}
+.treatment-banner p {
+  max-width: 790px;
+  margin: 0 auto;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 16px;
+  line-height: 1.7;
+}
+.treatments-listing {
+  background: #f8f8f4;
+}
+.treatments-heading {
+  max-width: 780px;
+  margin: 0 auto 44px;
+  text-align: center;
+}
+.treatments-kicker {
+  display: block;
+  margin-bottom: 10px;
+  color: #6b6f3d;
+  font-family: Montserrat, sans-serif;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.18em;
+}
+.treatments-heading h2 {
+  margin: 0 0 14px;
+  color: #173a29;
+  font-size: clamp(32px, 4vw, 48px);
+}
+.treatments-heading p {
+  margin: 0;
+  color: #697386;
+  font-size: 16px;
+  line-height: 1.75;
+}
+.treatments-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+.treatment-card {
+  overflow: hidden;
+  background: #fff;
+  border: 1px solid rgba(107, 111, 61, 0.12);
+  border-radius: 18px;
+  box-shadow: 0 12px 35px rgba(23, 58, 41, 0.08);
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease;
+}
+.treatment-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 45px rgba(23, 58, 41, 0.13);
+}
+.treatment-card-image {
+  position: relative;
+  display: block;
+  height: 230px;
+  overflow: hidden;
+}
+.treatment-card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.45s ease;
+}
+.treatment-card:hover .treatment-card-image img {
+  transform: scale(1.045);
+}
+.treatment-image-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(23, 58, 41, 0.2));
+}
+.treatment-card-body {
+  padding: 23px 24px 25px;
+}
+.treatment-card-label {
+  display: block;
+  margin-bottom: 8px;
+  color: #7b7040;
+  font-family: Montserrat, sans-serif;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.15em;
+}
+.treatment-card h3 {
+  margin: 0 0 10px;
+  font-size: 21px;
+  line-height: 1.3;
+}
+.treatment-card h3 a {
+  color: #173a29;
+}
+.treatment-card p {
+  min-height: 54px;
+  margin: 0 0 18px;
+  color: #697386;
+  font-size: 14px;
+  line-height: 1.7;
+}
+.treatment-read-more {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  color: #6b6f3d;
+  font-family: Montserrat, sans-serif;
+  font-size: 13px;
+  font-weight: 800;
+}
+.treatment-read-more span {
+  transition: transform 0.2s;
+}
+.treatment-read-more:hover span {
+  transform: translate(3px, -3px);
+}
+@media (max-width: 1024px) {
+  .treatments-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+  .treatment-card-image {
+    height: 220px;
+  }
+}
+/* =========================================================
+   TABLET BANNER FIX
+========================================================= */
+
+@media (max-width: 991px) {
+  .treatment-banner {
+    margin-top: 76px;
+  }
+}
+@media (max-width: 700px) {
+  .treatment-banner {
+    margin-top: 76px;
+    padding: 34px 16px 38px;
+  }
+  .treatment-banner p {
+    font-size: 14px;
+  }
+  .treatments-listing {
+    padding: 58px 0;
+  }
+  .treatments-heading {
+    margin-bottom: 30px;
+  }
+  .treatments-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+  .treatment-card-image {
+    height: 215px;
+  }
+  .treatment-card-body {
+    padding: 20px;
+  }
+  .treatment-card p {
+    min-height: 0;
+  }
+}

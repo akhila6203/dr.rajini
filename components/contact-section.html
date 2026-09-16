@@ -1,0 +1,597 @@
+<!-- =========================================================
+     REUSABLE CONTACT SECTION
+
+     Used by:
+     - contact.html
+     - index.html
+
+     IMPORTANT:
+     This keeps the ORIGINAL contact-page form structure.
+========================================================= -->
+
+
+<!-- =========================================================
+     CONTACT CONTENT
+========================================================= -->
+
+<section class="separate-contact-page">
+
+    <div class="container separate-contact-grid">
+
+
+        <!-- =================================================
+             LEFT SIDE
+        ================================================== -->
+
+        <div class="contact-page-left">
+
+
+            <div class="page-small-title">
+
+                <i class="fa-solid fa-phone-volume"></i>
+
+                <span>
+                    Contact Us
+                </span>
+
+            </div>
+
+
+            <h2>
+                Just Say
+                <span>Hello!</span>
+            </h2>
+
+
+
+            <!-- =================================================
+                 PHONE
+            ================================================== -->
+
+            <div class="contact-info-row">
+
+                <div class="contact-round-icon">
+
+                    <i class="fa-solid fa-phone"></i>
+
+                </div>
+
+
+                <div class="contact-info-box">
+
+                    <small>
+                        APPOINTMENT PHONE
+                    </small>
+
+
+                    <a href="tel:+919437955843">
+                        +91 94379 55843
+                    </a>
+
+
+                    <p>
+                        Available for consultations
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 EMAIL
+            ================================================== -->
+
+            <div class="contact-info-row">
+
+                <div class="contact-round-icon">
+
+                    <i class="fa-solid fa-envelope"></i>
+
+                </div>
+
+
+                <div class="contact-info-box">
+
+                    <small>
+                        EMAIL
+                    </small>
+
+
+                    <a href="mailto:Dr.Rajini.Muthineni@gmail.com">
+                        Dr.Rajini.Muthineni@gmail.com
+                    </a>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOCATION 01
+            ================================================== -->
+
+            <div class="contact-info-row">
+
+                <div class="contact-round-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+
+                <div class="contact-info-box">
+
+                    <small>
+                        CLOUDNINE HOSPITAL - KOKAPET
+                    </small>
+
+
+                    <p class="address-text">
+
+                        The Classe By DSR,
+                        opposite Rockwell International School,
+                        Narsingi, Hyderabad,
+                        Telangana 500075.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 LOCATION 02
+            ================================================== -->
+
+            <div class="contact-info-row">
+
+                <div class="contact-round-icon">
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                </div>
+
+
+                <div class="contact-info-box">
+
+                    <small>
+                        IKIGAI CLINIC
+                    </small>
+
+
+                    <p class="address-text">
+
+                        Plot No.60,
+                        4th Floor,
+                        Prasad Enclave,
+                        Kondapur,
+                        Hyderabad - 500084.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 SOCIAL MEDIA
+            ================================================== -->
+
+            <div class="contact-follow">
+
+                <h3>
+                    Follow Us
+                </h3>
+
+
+                <div class="contact-social-icons">
+
+
+                    <!-- FACEBOOK -->
+
+                    <a
+                        href="https://www.facebook.com/people/Dr-Rajini-Muthineni/100069708578331/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Facebook"
+                    >
+
+                        <i class="fa-brands fa-facebook-f"></i>
+
+                    </a>
+
+
+
+                    <!-- INSTAGRAM -->
+
+                    <a
+                        href="https://www.instagram.com/dr.rajini.muthineni.official/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Instagram"
+                    >
+
+                        <i class="fa-brands fa-instagram"></i>
+
+                    </a>
+
+
+
+                    <!-- YOUTUBE -->
+
+                    <a
+                        href="#"
+                        aria-label="YouTube"
+                    >
+
+                        <i class="fa-brands fa-youtube"></i>
+
+                    </a>
+
+
+
+                    <!-- WHATSAPP -->
+
+                    <a
+                        href="https://wa.me/919437955843"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="WhatsApp"
+                    >
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- =================================================
+             RIGHT SIDE
+             ORIGINAL CONTACT FORM
+        ================================================== -->
+
+        <div class="separate-form-card contact-form-card">
+
+
+            <div class="page-small-title">
+
+                <span>
+                    Send A Message
+                </span>
+
+            </div>
+
+
+            <h2>
+
+                We'd Love To
+
+                <span>
+                    Hear From You
+                </span>
+
+            </h2>
+
+
+
+            <!-- =================================================
+                 IMPORTANT
+
+                 This is the SAME original form:
+                 Full Name
+                 Email
+                 Phone
+                 Message
+
+                 And same send-mail.php integration.
+            ================================================== -->
+
+            <form
+                action="send-mail.php"
+                method="POST"
+                class="separate-contact-form"
+            >
+
+
+                <input
+                    type="hidden"
+                    name="form_type"
+                    value="contact"
+                >
+
+
+
+                <!-- =============================================
+                     FULL NAME
+                ============================================== -->
+
+                <div class="separate-form-group">
+
+                    <label for="contact-name">
+                        Full Name
+                    </label>
+
+
+                    <input
+                        type="text"
+                        id="contact-name"
+                        name="full_name"
+                        placeholder="Full Name"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- =============================================
+                     EMAIL
+                ============================================== -->
+
+                <div class="separate-form-group">
+
+                    <label for="contact-email">
+                        Email Address
+                    </label>
+
+
+                    <input
+                        type="email"
+                        id="contact-email"
+                        name="email"
+                        placeholder="Email Address"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- =============================================
+                     PHONE
+                ============================================== -->
+
+                <div class="separate-form-group">
+
+                    <label for="contact-phone">
+                        Phone Number
+                    </label>
+
+
+                    <input
+                        type="tel"
+                        id="contact-phone"
+                        name="phone"
+                        placeholder="Phone Number"
+                        required
+                    >
+
+                </div>
+
+
+
+                <!-- =============================================
+                     MESSAGE
+                ============================================== -->
+
+                <div class="separate-form-group">
+
+                    <label for="contact-message">
+                        Message
+                    </label>
+
+
+                    <textarea
+                        id="contact-message"
+                        name="message"
+                        rows="4"
+                        placeholder="Write Message..."
+                        required
+                    ></textarea>
+
+                </div>
+
+
+
+                <!-- =============================================
+                     SUBMIT
+                ============================================== -->
+
+                <button
+                    type="submit"
+                    class="separate-submit-btn"
+                >
+
+                    Send Message
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     LOCATIONS
+========================================================= -->
+
+<section class="contact-maps-section">
+
+    <div class="container">
+
+
+        <!-- =================================================
+             MAP HEADING
+        ================================================== -->
+
+        <div class="contact-maps-heading">
+
+
+            <div class="page-small-title map-small-title">
+
+                <i class="fa-solid fa-location-dot"></i>
+
+                <span>
+                    Our Locations
+                </span>
+
+            </div>
+
+
+            <h2>
+
+                Find Us
+
+                <span>
+                    Near You
+                </span>
+
+            </h2>
+
+
+            <p>
+
+                Visit Dr. Muthineni Rajini at our convenient
+                consultation locations in Hyderabad.
+
+            </p>
+
+        </div>
+
+
+
+        <!-- =================================================
+             TWO MAPS
+        ================================================== -->
+
+        <div class="contact-maps-grid">
+
+
+
+            <!-- =================================================
+                 MAP 01
+                 CLOUDNINE HOSPITAL
+            ================================================== -->
+
+            <div class="contact-map-card">
+
+
+                <div class="contact-map-frame">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Cloudnine+Hospital+Kokapet+The+Classe+By+DSR+opposite+Rockwell+International+School+Narsingi+Hyderabad+Telangana+500075&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="Cloudnine Hospital Kokapet"
+                    ></iframe>
+
+                </div>
+
+
+                <div class="contact-map-details">
+
+                    <span>
+                        LOCATION 01
+                    </span>
+
+
+                    <h3>
+                        Cloudnine Hospital - Kokapet
+                    </h3>
+
+
+                    <p>
+
+                        The Classe By DSR,
+                        opposite Rockwell International School,
+                        Narsingi,
+                        Hyderabad,
+                        Telangana 500075.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- =================================================
+                 MAP 02
+                 IKIGAI CLINIC
+            ================================================== -->
+
+            <div class="contact-map-card">
+
+
+                <div class="contact-map-frame">
+
+                    <iframe
+                        src="https://www.google.com/maps?q=Plot+No+60+4th+Floor+Prasad+Enclave+Kondapur+Hyderabad+500084&output=embed"
+                        width="100%"
+                        height="100%"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"
+                        title="IKIGAI Clinic Kondapur"
+                    ></iframe>
+
+                </div>
+
+
+                <div class="contact-map-details">
+
+                    <span>
+                        LOCATION 02
+                    </span>
+
+
+                    <h3>
+                        IKIGAI Clinic
+                    </h3>
+
+
+                    <p>
+
+                        Plot No.60,
+                        4th Floor,
+                        Prasad Enclave,
+                        Kondapur,
+                        Hyderabad - 500084.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
