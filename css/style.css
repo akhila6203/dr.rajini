@@ -1,5 +1,5 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap");
-
+/* @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap"); */
+   @import url("https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Montserrat:wght@500;600;700;800&family=Open+Sans:wght@400;500;600;700&display=swap");
 
 :root {
     --primary: #6b6f3d;
@@ -22,7 +22,8 @@
     --radius-lg: 32px;
     --container: 1200px;
     --header-height: 92px;
-    --font-heading: "Playfair Display", Georgia, serif;
+    --font-heading: "Lora", Georgia, serif;
+    /* --font-heading: "Playfair Display", Georgia, serif; */
     --font-body: "Open Sans", "Segoe UI", sans-serif;
     --font-ui: "Montserrat", "Segoe UI", sans-serif;
     --transition: 0.25s ease;
@@ -738,7 +739,7 @@ p {
     height: 560px;
     object-fit: contain;
     object-position: center bottom;
-    background: #ffffff;
+    background: none;
 }
 
 .experience-badge,

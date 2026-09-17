@@ -120,6 +120,7 @@ body {
     object-fit: cover;
 
     object-position: center;
+    object-position: center 20%;
 }
 
 
@@ -162,7 +163,7 @@ body {
 
 .home-hero-content {
     width: 100%;
-    max-width: 750px;
+    max-width: 800px;
 
     margin-left: 0;
     margin-right: auto;
@@ -195,7 +196,7 @@ body {
 
     font-family: var(--font-heading);
 
-    font-size: clamp(46px, 4.6vw, 66px);
+    font-size: clamp(46px, 4.4vw, 66px);
 
     line-height: 1.04;
 
@@ -485,11 +486,11 @@ body {
 
     border-radius: 28px;
 
-    background: #ffffff;
+    /* background: #ffffff; */
 
-    box-shadow:
+    /* box-shadow:
         0 18px 45px
-        rgba(34, 46, 40, 0.07);
+        rgba(34, 46, 40, 0.07); */
 }
 
 
@@ -1834,7 +1835,7 @@ body {
 
 
     .home-hero-content {
-        max-width: 610px;
+        max-width: 680px;
     }
 
 
@@ -2287,7 +2288,7 @@ body {
     }
 
     .home-hero-content {
-        max-width: 620px;
+        max-width: 800px;
         margin-left: 25px;
     }
 }
@@ -2321,6 +2322,536 @@ body {
         width: 100%;
         max-width: 100%;
         margin: 0;
+    }
+
+}
+
+
+/* =========================================================
+   ADVANCED MATERNAL & PRENATAL CARE
+========================================================= */
+
+.maternal-care-section {
+    position: relative;
+    overflow: hidden;
+    background:
+        radial-gradient(
+            circle at 10% 15%,
+            rgba(196, 162, 74, 0.08),
+            transparent 26%
+        ),
+        linear-gradient(
+            135deg,
+            #fbfaf6 0%,
+            #ffffff 55%,
+            #f6f5ef 100%
+        );
+}
+
+
+/* =========================================================
+   TOP CENTER HEADING
+========================================================= */
+
+.maternal-care-heading {
+    width: 100%;
+    max-width: 900px;
+
+    margin: 0 auto 40px;
+
+    text-align: center;
+}
+
+
+.maternal-care-eyebrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 12px;
+
+    margin-bottom: 15px;
+
+    color: var(--primary);
+
+    font-family: var(--font-ui);
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+}
+
+
+.maternal-care-eyebrow::before,
+.maternal-care-eyebrow::after {
+    content: "";
+
+    width: 35px;
+    height: 1px;
+
+    background: var(--gold);
+}
+
+
+.maternal-care-heading h2 {
+    margin: 0 auto 18px;
+
+    color: var(--dark);
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(38px, 4vw, 50px);
+    font-weight: 400;
+
+    line-height: 1.1;
+    letter-spacing: -0.035em;
+}
+
+
+.maternal-care-heading h2 em {
+    color: var(--primary);
+
+    font-style: italic;
+    font-weight: 400;
+}
+
+
+.maternal-care-heading > p {
+    max-width: 700px;
+
+    margin: 0 auto;
+
+    color: var(--muted);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   BELOW - LEFT CONTENT + RIGHT IMAGE
+========================================================= */
+
+.maternal-care-grid {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1.05fr);
+
+    align-items: center;
+
+    gap: 70px;
+}
+
+
+/* =========================================================
+   LEFT CONTENT
+========================================================= */
+
+.maternal-care-content {
+    min-width: 0;
+}
+
+
+.maternal-care-content-title {
+    max-width: 520px;
+
+    margin: 0 0 16px;
+
+    color: var(--dark);
+
+    font-family: var(--font-heading);
+
+    font-size: clamp(22px, 2.2vw, 30px);
+    font-weight: 400;
+
+    line-height: 1.2;
+}
+
+
+.maternal-care-content-title span {
+    color: var(--primary);
+}
+
+
+.maternal-care-lead {
+    max-width: 580px;
+
+    margin: 0 0 27px;
+
+    color: var(--muted);
+
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+
+/* =========================================================
+   LEFT CONTENT CARDS
+========================================================= */
+
+.maternal-care-points {
+    display: grid;
+
+    gap: 13px;
+
+    margin-bottom: 28px;
+}
+
+
+.maternal-care-point {
+    display: grid;
+
+    grid-template-columns: 50px minmax(0, 1fr);
+
+    align-items: center;
+
+    gap: 16px;
+
+    padding: 16px 18px;
+
+    background: rgba(255, 255, 255, 0.88);
+
+    border: 1px solid rgba(107, 111, 61, 0.14);
+
+    border-radius: 16px;
+
+    box-shadow:
+        0 10px 30px rgba(30, 41, 59, 0.04);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+
+.maternal-care-point:hover {
+    transform: translateX(5px);
+
+    border-color: rgba(196, 162, 74, 0.5);
+
+    box-shadow:
+        0 14px 35px rgba(30, 41, 59, 0.08);
+}
+
+
+.maternal-care-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 50px;
+    height: 50px;
+
+    color: var(--primary);
+
+    background: var(--secondary);
+
+    border-radius: 50%;
+
+    font-size: 18px;
+}
+
+
+.maternal-care-point h3 {
+    margin: 0 0 4px;
+
+    color: var(--dark);
+
+    font-family: var(--font-ui);
+
+    font-size: 15px;
+    font-weight: 700;
+
+    line-height: 1.4;
+    letter-spacing: 0;
+}
+
+
+.maternal-care-point p {
+    margin: 0;
+
+    color: var(--muted);
+
+    font-size: 13px;
+    line-height: 1.65;
+}
+
+
+.maternal-care-btn {
+    margin-top: 2px;
+}
+
+
+/* =========================================================
+   RIGHT IMAGE
+========================================================= */
+
+.maternal-care-visual {
+    position: relative;
+
+    min-width: 0;
+
+    padding: 0 0 45px 25px;
+}
+
+
+.maternal-care-image {
+    position: relative;
+
+    width: 100%;
+
+    overflow: hidden;
+
+    background: #f5f5f2;
+
+    border-radius:
+        32px
+        32px
+        110px
+        32px;
+
+    box-shadow:
+        0 25px 60px rgba(30, 41, 59, 0.13);
+}
+
+
+.maternal-care-image img {
+    display: block;
+
+    width: 100%;
+    height: 580px;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.5s ease;
+}
+
+
+.maternal-care-visual:hover
+.maternal-care-image img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================================
+   IMAGE BOTTOM HIGHLIGHT
+========================================================= */
+
+.maternal-care-highlight {
+    position: absolute;
+
+    left: 0;
+    bottom: 0;
+
+    z-index: 5;
+
+    width: min(335px, 80%);
+
+    padding: 19px 23px;
+
+    background: var(--primary);
+
+    border-radius: 18px;
+
+    box-shadow:
+        0 18px 42px rgba(30, 41, 59, 0.2);
+}
+
+
+.maternal-care-highlight span {
+    display: block;
+
+    margin-bottom: 5px;
+
+    color: var(--gold);
+
+    font-family: var(--font-ui);
+
+    font-size: 10px;
+    font-weight: 800;
+
+    letter-spacing: 0.13em;
+    text-transform: uppercase;
+}
+
+
+.maternal-care-highlight strong {
+    display: block;
+
+    color: #ffffff;
+
+    font-family: var(--font-heading);
+
+    font-size: 21px;
+    font-weight: 400;
+
+    line-height: 1.25;
+}
+
+
+/* =========================================================
+   TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .maternal-care-heading {
+        margin-bottom: 42px;
+    }
+
+    .maternal-care-grid {
+        grid-template-columns: 1fr;
+
+        gap: 45px;
+    }
+
+    .maternal-care-content {
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        width: 100%;
+    }
+
+    .maternal-care-visual {
+        width: 100%;
+        max-width: 700px;
+
+        margin: 0 auto;
+
+        padding-left: 25px;
+    }
+
+    .maternal-care-image img {
+        height: 500px;
+    }
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media (max-width: 576px) {
+
+    .maternal-care-heading {
+        margin-bottom: 35px;
+
+        text-align: center;
+    }
+
+    .maternal-care-eyebrow {
+        font-size: 10px;
+        letter-spacing: 0.11em;
+    }
+
+    .maternal-care-eyebrow::before,
+    .maternal-care-eyebrow::after {
+        width: 20px;
+    }
+
+    .maternal-care-heading h2 {
+        font-size: 34px;
+
+        line-height: 1.12;
+    }
+
+    .maternal-care-heading h2 em {
+        display: block;
+
+        margin-top: 4px;
+    }
+
+    .maternal-care-heading > p {
+        font-size: 14px;
+    }
+
+
+    .maternal-care-grid {
+        gap: 38px;
+    }
+
+
+    .maternal-care-content-title {
+        font-size: 28px;
+    }
+
+
+    .maternal-care-lead {
+        font-size: 14px;
+    }
+
+
+    .maternal-care-point {
+        grid-template-columns:
+            44px
+            minmax(0, 1fr);
+
+        gap: 12px;
+
+        padding: 14px;
+    }
+
+
+    .maternal-care-icon {
+        width: 44px;
+        height: 44px;
+
+        font-size: 16px;
+    }
+
+
+    .maternal-care-point h3 {
+        font-size: 14px;
+    }
+
+
+    .maternal-care-point p {
+        font-size: 12px;
+    }
+
+
+    .maternal-care-visual {
+        padding:
+            0
+            0
+            55px
+            0;
+    }
+
+
+    .maternal-care-image {
+        border-radius:
+            24px
+            24px
+            70px
+            24px;
+    }
+
+
+    .maternal-care-image img {
+        height: 410px;
+    }
+
+
+    .maternal-care-highlight {
+        left: 14px;
+
+        width: calc(100% - 28px);
+
+        padding: 17px 19px;
+    }
+
+
+    .maternal-care-highlight strong {
+        font-size: 19px;
     }
 
 }
