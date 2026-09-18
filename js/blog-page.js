@@ -33,13 +33,6 @@
                     admin
                 </span>
 
-                <span class="meta-dot"></span>
-
-                <span>
-                    <i class="fa-solid fa-comment"></i>
-                    0 Comments
-                </span>
-
             </div>
 
 

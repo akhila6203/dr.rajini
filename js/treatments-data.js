@@ -268,7 +268,7 @@ window.TREATMENTS = [
         shortName: "Counselling",
         title: "Counselling Services",
         displayTitle: "Counselling Services",
-        image: "assets/images/owner.jpg",
+        image: "assets/images/d2.jpg",
 
         shortDescription:
             "Confidential and compassionate counselling supporting women and families throughout reproductive care.",
