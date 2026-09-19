@@ -156,13 +156,19 @@
 
     padding: 34px 20px 42px;
 
-    background:
+    /* background:
         linear-gradient(
             110deg,
             #68713a 0%,
             #77783a 48%,
             #94873d 100%
-        );
+        ); */
+        background: linear-gradient(
+        110deg,
+        #575a32 0%,
+        #6b6f3d 55%,
+        #8a7b3f 100%
+    );
 
     overflow: hidden;
 

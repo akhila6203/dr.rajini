@@ -261,7 +261,7 @@ const homeServices = [
         category: "CARE",
         title: "Obstetrics",
         text: "Comprehensive pregnancy care, delivery services, and maternal health management.",
-        image: "assets/images/service-obstetrics.jpg",
+        image: "assets/images/service3.png",
         url: "treatments.html?service=obstetrics"
     },
 
@@ -269,7 +269,7 @@ const homeServices = [
         category: "CARE",
         title: "High Risk Obstetrics",
         text: "Advanced maternal-fetal care for complex and high-risk pregnancies.",
-        image: "assets/images/service-high-risk.jpg",
+        image: "assets/images/highrisk.png",
         url: "treatments.html?service=high-risk-obstetrics"
     },
 
@@ -285,7 +285,7 @@ const homeServices = [
         category: "SURGERY",
         title: "Surgical Gynecology",
         text: "Expert surgical treatments for various complex gynecological conditions.",
-        image: "assets/images/service-surgical-gyn.jpg",
+        image: "assets/images/service5.png",
         url: "treatments.html?service=surgical-gynecology"
     },
 
@@ -301,7 +301,7 @@ const homeServices = [
         category: "SURGERY",
         title: "Laparoscopic Surgery",
         text: "Advanced minimally invasive gynecological surgical procedures.",
-        image: "assets/images/service-laparoscopic.jpg",
+        image: "assets/images/service4.png",
         url: "treatments.html?service=laparoscopy"
     }
 ];

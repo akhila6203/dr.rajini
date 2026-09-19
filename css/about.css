@@ -2076,3 +2076,465 @@
     }
 
 }
+
+/* =========================================================
+   EDUCATION & ADVANCED TRAINING - UPDATED
+========================================================= */
+
+.education-training-list {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 20px;
+    width: 100%;
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.training-card {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 28px 24px 26px;
+    overflow: hidden;
+
+    border: 1px solid var(--about-border);
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 26px
+        rgba(23, 60, 43, .055);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.training-card:hover {
+    transform: translateY(-5px);
+
+    border-color:
+        rgba(116, 123, 63, .42);
+
+    box-shadow:
+        0 16px 36px
+        rgba(23, 60, 43, .10);
+}
+
+.training-number {
+    position: absolute;
+    top: 12px;
+    right: 18px;
+
+    color:
+        rgba(116, 123, 63, .09);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.training-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 52px;
+    height: 52px;
+
+    margin-bottom: 19px;
+
+    border-radius: 13px;
+
+    background:
+        var(--about-soft);
+
+    color:
+        var(--about-green);
+
+    font-size: 20px;
+}
+
+.training-content {
+    position: relative;
+    z-index: 2;
+}
+
+.training-type {
+    display: block;
+
+    margin-bottom: 8px;
+
+    color:
+        var(--about-gold);
+
+    font-family:
+        "Montserrat",
+        sans-serif;
+
+    font-size: 12px;
+    font-weight: 800;
+
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+.training-content h3 {
+    margin: 0 0 10px;
+
+    color:
+        var(--about-deep);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.35;
+}
+
+.training-content p {
+    margin: 0;
+
+    color: #69756e;
+
+    font-family:
+        "Open Sans",
+        sans-serif;
+
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+.training-content strong {
+    color:
+        var(--about-deep);
+
+    font-weight: 700;
+}
+
+
+/* =========================================================
+   AWARDS & RECOGNITION
+========================================================= */
+
+.about-awards-section {
+    padding: 85px 20px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f5f7f0 0%,
+            #fbfcf9 100%
+        );
+}
+
+.awards-grid {
+    display: grid;
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 20px;
+
+    width: 100%;
+    max-width: 1080px;
+
+    margin: 0 auto;
+}
+
+.award-card {
+    position: relative;
+
+    display: grid;
+
+    grid-template-columns:
+        58px minmax(0, 1fr);
+
+    align-items: start;
+
+    gap: 18px;
+
+    min-width: 0;
+
+    padding: 25px 25px;
+
+    overflow: hidden;
+
+    border:
+        1px solid
+        var(--about-border);
+
+    border-radius: 18px;
+
+    background: #ffffff;
+
+    box-shadow:
+        0 8px 26px
+        rgba(23, 60, 43, .055);
+
+    transition:
+        transform .3s ease,
+        border-color .3s ease,
+        box-shadow .3s ease;
+}
+
+.award-card:hover {
+    transform:
+        translateY(-5px);
+
+    border-color:
+        rgba(116, 123, 63, .40);
+
+    box-shadow:
+        0 16px 36px
+        rgba(23, 60, 43, .10);
+}
+
+.award-icon {
+    display: flex;
+
+    align-items: center;
+    justify-content: center;
+
+    width: 56px;
+    height: 56px;
+
+    border-radius: 14px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #eef0e3,
+            #f7f4e7
+        );
+
+    color:
+        var(--about-green);
+
+    font-size: 21px;
+}
+
+.award-content {
+    min-width: 0;
+}
+
+.award-year {
+    position: absolute;
+
+    top: 13px;
+    right: 17px;
+
+    color:
+        rgba(116, 123, 63, .10);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.award-content h3 {
+    position: relative;
+    z-index: 2;
+
+    max-width: 80%;
+
+    margin:
+        2px 0 10px;
+
+    color:
+        var(--about-deep);
+
+    font-family:
+        "Playfair Display",
+        Georgia,
+        serif;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    line-height: 1.4;
+}
+
+.award-content p {
+    position: relative;
+    z-index: 2;
+
+    margin: 0;
+
+    color: #69756e;
+
+    font-family:
+        "Open Sans",
+        sans-serif;
+
+    font-size: 14px;
+
+    line-height: 1.75;
+}
+
+.award-content strong {
+    color:
+        var(--about-deep);
+
+    font-weight: 700;
+}
+
+
+/* Last award centered on desktop */
+.award-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+
+    width: calc(50% - 10px);
+
+    justify-self: center;
+}
+
+
+/* =========================================================
+   EDUCATION + AWARDS TABLET
+========================================================= */
+
+@media (max-width: 991px) {
+
+    .education-training-list {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+    .about-awards-section {
+        padding:
+            70px 20px;
+    }
+
+}
+
+
+/* =========================================================
+   EDUCATION + AWARDS MOBILE
+========================================================= */
+
+@media (max-width: 767px) {
+
+    .education-training-list {
+        grid-template-columns: 1fr;
+
+        gap: 16px;
+    }
+
+    .training-card {
+        padding:
+            24px 21px;
+    }
+
+    .training-content h3 {
+        font-size: 19px;
+    }
+
+    .training-content p {
+        font-size: 14px;
+    }
+
+
+    .about-awards-section {
+        padding:
+            60px 15px;
+    }
+
+    .awards-grid {
+        grid-template-columns: 1fr;
+
+        gap: 15px;
+    }
+
+    .award-card,
+    .award-card:last-child:nth-child(odd) {
+        grid-column: auto;
+
+        width: 100%;
+    }
+
+    .award-content h3 {
+        max-width: 78%;
+
+        font-size: 19px;
+    }
+
+}
+
+
+/* =========================================================
+   EDUCATION + AWARDS SMALL MOBILE
+========================================================= */
+
+@media (max-width: 480px) {
+
+    .training-card {
+        padding:
+            22px 18px;
+    }
+
+    .training-number {
+        font-size: 48px;
+    }
+
+    .training-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 18px;
+    }
+
+    .training-content h3 {
+        font-size: 18px;
+    }
+
+
+    .award-card {
+        grid-template-columns: 48px minmax(0, 1fr);
+
+        gap: 14px;
+
+        padding:
+            21px 17px;
+    }
+
+    .award-icon {
+        width: 48px;
+        height: 48px;
+
+        font-size: 18px;
+    }
+
+    .award-year {
+        top: 12px;
+        right: 13px;
+
+        font-size: 29px;
+    }
+
+    .award-content h3 {
+        max-width: 82%;
+
+        font-size: 18px;
+    }
+
+    .award-content p {
+        font-size: 14px;
+    }
+
+}

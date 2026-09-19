@@ -8,7 +8,7 @@ window.TREATMENTS = [
         shortName: "Obstetrics",
         title: "Obstetrics & Gynecology",
         displayTitle: "Comprehensive Obstetrics",
-        image: "assets/images/service-obstetrics.jpg",
+        image: "assets/images/service2.png",
 
         shortDescription:
             "Comprehensive pregnancy, delivery and postpartum care focused on the health and safety of mother and baby.",
@@ -34,7 +34,7 @@ window.TREATMENTS = [
         shortName: "High Risk",
         title: "High-Risk Obstetrics",
         displayTitle: "High-Risk Obstetrics Specialist",
-        image: "assets/images/service-high-risk.jpg",
+        image: "assets/images/highrisk.png",
 
         shortDescription:
             "Specialized monitoring and evidence-based care for pregnancies requiring additional medical attention.",
@@ -86,7 +86,7 @@ window.TREATMENTS = [
         shortName: "Surgical Gyn",
         title: "Surgical Gynecology",
         displayTitle: "Surgical Gynecology",
-        image: "assets/images/service-surgical-gyn.jpg",
+        image: "assets/images/service5.png",
 
         shortDescription:
             "Modern operative care for fibroids, ovarian cysts, endometriosis and complex pelvic disorders.",
@@ -112,7 +112,7 @@ window.TREATMENTS = [
         shortName: "Robotic",
         title: "Robotic-Assisted Surgery",
         displayTitle: "Robotic-Assisted Surgery",
-        image: "assets/images/laparoscopic-surgery.jpg",
+        image: "assets/images/service1.png",
 
         shortDescription:
             "Precision-focused minimally invasive surgery using advanced robotic technology and visualization.",
@@ -138,7 +138,7 @@ window.TREATMENTS = [
         shortName: "Laparoscopic",
         title: "Laparoscopic Surgeries",
         displayTitle: "Advanced Laparoscopy",
-        image: "assets/images/service-laparoscopic.jpg",
+        image: "assets/images/service6.png",
 
         shortDescription:
             "Advanced keyhole procedures designed for smaller incisions, faster recovery and minimal discomfort.",
@@ -164,7 +164,7 @@ window.TREATMENTS = [
         shortName: "Hysteroscopy",
         title: "Hysteroscopy Procedures",
         displayTitle: "Hysteroscopy Procedures",
-        image: "assets/images/service-hysteroscopy.jpg",
+        image: "assets/images/service9.png",
 
         shortDescription:
             "Camera-guided minimally invasive evaluation and treatment of conditions within the uterine cavity.",
@@ -190,7 +190,7 @@ window.TREATMENTS = [
         shortName: "Emergency",
         title: "Emergency Surgeries",
         displayTitle: "Emergency Surgeries",
-        image: "assets/images/service-emergency.jpg",
+        image: "assets/images/service6.png",
 
         shortDescription:
             "Rapid-response surgical care for urgent obstetric and gynecological conditions.",
@@ -242,7 +242,7 @@ window.TREATMENTS = [
         shortName: "Menopausal",
         title: "Menopausal Clinic",
         displayTitle: "Menopausal Clinic",
-        image: "assets/images/service-menopausal.jpg",
+        image: "assets/images/service8.png",
 
         shortDescription:
             "Dedicated menopause care focused on symptom relief, hormonal balance and long-term wellbeing.",
@@ -294,7 +294,7 @@ window.TREATMENTS = [
         shortName: "Cosmetic",
         title: "Cosmetic Gynecology",
         displayTitle: "Cosmetic Gynecology",
-        image: "assets/images/service-cosmetic.jpg",
+        image: "assets/images/service7.png",
 
         shortDescription:
             "Advanced procedures focused on intimate wellness, function, comfort and aesthetic confidence.",
