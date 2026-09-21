@@ -4168,3 +4168,15 @@ a.footer-contact-row:hover {
     font-weight: 400;
     line-height: 1.65;
 }
+
+/* =========================================================
+   FOOTER SERVICES - COMPACT SPACING
+========================================================= */
+
+.footer-services-list {
+    gap: 4px !important;
+}
+
+.footer-services-list li a {
+    line-height: 1.4;
+}
