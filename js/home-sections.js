@@ -303,7 +303,66 @@ const homeServices = [
         text: "Advanced minimally invasive gynecological surgical procedures.",
         image: "assets/images/service4.png",
         url: "treatments.html?service=laparoscopy"
-    }
+    },
+
+     /* =====================================================
+       NEW SERVICE - ROBOTIC SURGERY
+    ===================================================== */
+    {
+        category: "ADVANCED SURGERY",
+        title: "Robotic Surgery",
+        text: "Advanced robotic-assisted gynecological surgery offering enhanced precision and minimally invasive care.",
+        image: "assets/images/service1.png",
+        url: "treatments.html?service=robotic-assisted-surgery"
+    },
+
+    /* =====================================================
+       NEW SERVICE - COSMETIC GYNECOLOGY
+    ===================================================== */
+    {
+        category: "WOMEN'S WELLNESS",
+        title: "Cosmetic Gynecology",
+        text: "Personalized cosmetic and functional gynecology care focused on women's comfort, confidence and well-being.",
+        image: "assets/images/service7.png",
+        url: "treatments.html?service=cosmetic-gynecology"
+    },
+
+    /* =====================================================
+       NEW SERVICE - MENOPAUSE CLINIC
+    ===================================================== */
+    {
+        category: "WELLNESS",
+        title: "Menopause Clinic",
+        text: "Comprehensive support for women through menopause, including evaluation and personalized symptom management.",
+        image: "assets/images/service8.png",
+        url: "treatments.html?service=menopausal-clinic"
+    },
+
+    /* =====================================================
+       NEW SERVICE - COUNSELLING
+    ===================================================== */
+    {
+        category: "SUPPORT",
+        title: "Counselling Services",
+        text: "Supportive counselling for preconception, contraception and important stages of women's reproductive health.",
+        image: "assets/images/d9.png",
+        url: "treatments.html?service=counselling-services"
+    },
+    {
+        category: "PROCEDURE",
+        title: "Hysteroscopy Procedures",
+        text: "Advanced hysteroscopic procedures for the diagnosis and treatment of conditions affecting the uterine cavity.",
+        image: "assets/images/service9.png",
+        url: "treatments.html?service=hysteroscopy-procedures"
+    },
+
+    {
+        category: "EMERGENCY CARE",
+        title: "Emergency Surgeries",
+        text: "Timely surgical care for urgent gynecological and obstetric conditions requiring immediate medical attention.",
+        image: "assets/images/service6.png",
+        url: "treatments.html?service=emergency-surgeries"
+    },
 ];
 
 
